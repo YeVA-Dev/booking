@@ -208,13 +208,14 @@ dl.tabs>dt.active,dl.tabs>dt.active+dd {
 }
 
 .r-and-p,.book-tickets {
-	padding: 15px;
+	padding: 15px 0;
 	float: left;
 	background: #fff;
 	border-radius: 20px;
 	overflow: hidden;
-	-webkit-box-sizing: border-box; -miz-box-sizing : border-box; box-sizing :
-	border-box;
+	-webkit-box-sizing: border-box;
+	-miz-box-sizing: border-box;
+	box-sizing: border-box;
 	*zoom: 1;
 	-miz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -236,7 +237,7 @@ dl.tabs>dt.active,dl.tabs>dt.active+dd {
 
 .rec-payment {
 	margin-bottom: 22px;
-	line-height:28px;
+	line-height: 28px;
 }
 
 .desination h1 {
@@ -248,68 +249,140 @@ dl.tabs>dt.active,dl.tabs>dt.active+dd {
 	width: 655px;
 }
 
-.people h2{
-	font-size:12px;
-	color:blue;
+.people h2 {
+	font-size: 12px;
+	color: blue;
 	text-transform: uppercase;
-	margin:0;
-	line-height:34px;
-}
-.rec-payment article>div{
-	position:relative;
-	z-index: 1;
-}
-.rec-payment span,.rec-payment b,.rec-payment i{
-	display:inline-block;
-	background:#fff;
-	z-index: 2;
-	color:#999;
-	font-style: normal;
-}
-.rec-payment article{
-	margin-bottom:16px;
-}
-.rec-payment input{
-	width:106px;
-	margin:0 10px 0 0;
-}
-.type1{
-	border-radius:30px;
-	background:linear-gradient(to bottom, #ecbd27,#ec7e27);
-	border:none;
-	box-shadow:inset 0 2px rgba(255,255,255,.6), inset 0 -1px rgba(0,0,0,.2);
-	font-weight:bold;
-	color:black;
+	margin: 0;
+	line-height: 34px;
 }
 
-.rec-payment b{
-	color:black;
+.rec-payment {
+	margin: 0 15px;
 }
-.rec-payment .extra-payment b{
-	color:blue;
+
+.rec-payment article>div {
+	position: relative;
+	z-index: 1;
 }
-.rec-payment article>div i{
-	float:right;
-	color:red;
-	font-weight:bold;
+
+.rec-payment span,.rec-payment b,.rec-payment i {
+	display: inline-block;
+	background: #fff;
+	z-index: 2;
+	color: #999;
+	font-style: normal;
+	background: #fff;
 }
-.rec-payment article>div:before{
-	display:block;
-	width:100%;
-	height:14px;
-	content:"";
-	border-bottom:1px dotted blue;
-	position:absolute;
-	top:0;
-	left:0;
-	z-index:-1
+
+.rec-payment article {
+	margin-bottom: 16px;
 }
-.result{
+
+.rec-payment input {
+	width: 106px;
+	margin: 0 10px 0 0;
+}
+
+.type1 {
+	border-radius: 30px;
+	background: linear-gradient(to bottom, #ecbd27, #ec7e27);
+	border: none;
+	box-shadow: inset 0 2px rgba(255, 255, 255, .6), inset 0 -1px rgba(0, 0, 0, .2);
+	font-weight: bold;
+	color: black;
+}
+
+.rec-payment b {
+	color: black;
+}
+
+.rec-payment .extra-payment b {
+	color: blue;
+}
+
+.rec-payment article>div i {
+	float: right;
+	color: red;
+	font-weight: bold;
+}
+
+.rec-payment article>div:before {
+	display: block;
+	width: 100%;
+	height: 14px;
+	content: "";
+	border-bottom: 1px dotted blue;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1
+}
+
+.result {
 	font-size: 24px;
-	line-height:1.25;
+	line-height: 1.25;
 }
-.result i{
-	color:red;
-	font-weight:bold;
-	float:right;
+
+.result i {
+	color: red;
+	font-weight: bold;
+	float: right;
+}
+
+.route h2{
+	color: white;
+	text-transform: uppercase;
+	background: blue url(i/fligh_sprite.png) 15px 0 no-repeat;
+	padding: 0 35px;
+  margin: 15px 0;
+	font-size:16px;
+	line-height:20px;
+}
+
+.route .back h2 {
+	background-position: 15px -19px;
+}
+
+.route article {
+	margin: 0 15px;
+}
+
+.route h3 {
+	font-size: 16px;
+	line-height:20px;
+	margin: 0;
+	color:#056696;
+	text-transform: uppercase;
+  background: url(i/fligh_sprite.png) left -37px no-repeat;
+  padding-left:16px;
+}
+
+.route .arrive h3 {
+	background-position:left -56px;
+}
+.route h3 i {
+	font-weight: normal;
+	font-style: normal;
+	padding-right:25px;
+	padding-left:5px;
+	font-size:14px;
+	line-height:18px;
+	vertical-align: baseline;
+  background-image: url(i/flags.png);
+  background-repeat: no-repeat;
+  background-position:right 18px;
+}
+
+
+.route h3.country-usa i {
+	background-position: right -18px;
+}
+
+.route h3.country-mdl i {
+	background-position: right -36px;
+}
+
+.route h3.country-rus i {
+	background-position: right 0;
 }

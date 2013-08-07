@@ -1,0 +1,225 @@
+@CHARSET "UTF-8";
+
+body {
+	margin: 0;
+	font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: #393939;
+	background-color: #ffffff;
+	background-image: url(i/bg-body.png);
+	background-repeat: repeat;
+	background-position: center;
+}
+address {
+  display: block;
+  margin-bottom: 0px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.container {
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	*zoom: 1;
+}
+
+.container:before,.container:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+
+.container:after {
+	clear: both;
+}
+
+header {
+	margin-top: 10px;
+	margin-bottom:17px;
+	position:relative;
+}
+
+.head-wrapper{
+	height:52px;
+	float:left;
+	line-height: 52px;
+	vertical-align: bottom;
+}
+
+.head-block,.head-block-login {
+	border-radius: 17px;
+	height: 34px;
+	display: inline-block;
+	line-height: 34px;
+	vertical-align: middle;
+	padding: 0 10px 0 12px;
+	margin-right:14px;
+	color: #fff;
+	background-image: url(i/bg-content.png), linear-gradient(to bottom, #40bfff 0%, #0088cc 100%);
+	box-shadow: inset 0 2px 0 rgba(255, 255, 255, .5), inset 0 0 8px #fff;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+	vertical-align: bottom;
+}
+
+.head-block a,.head-block-login a {
+	display: inline-block;
+	color: #fff;
+	margin: 0 4px 0 0;
+}
+
+.head-block a:hover,.head-block a:focus,.head-block-login a:hover,.head-block-login a:focus {
+	text-decoration: none;
+	color: #f9ca23;
+}
+
+.head-block a:before,.head-block-login a span:before {
+	display: inline-block;
+	width: 1px;
+	height: 10px;
+	border-left: 1px dotted #fff;
+	margin: 0 4px 0 0;
+	content: "";
+}
+
+.head-block a:first-child {
+	width: 16px;
+	height: 16px;
+	vertical-align: text-bottom;
+	background: url(i/sprite.png) 0 0 no-repeat;
+	margin-right: 5px;
+}
+
+.head-block :first-child:hover,.head-block :first-child:focus {
+	background-position: -16px 0;
+}
+
+.head-block a:first-child:before {
+	display: none;
+}
+
+.head-block-login a {
+	margin-right: 14px;
+}
+
+.head-block-login a.login:before {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(i/sprite.png) 0 -16px no-repeat;
+	margin-right: 5px;
+	margin-left: 2px;
+	vertical-align: text-bottom;
+	content: "";
+}
+
+.head-block-login a.login:hover:before,.head-block-login a.login:focus:before {
+	background-position: -16px -16px;
+}
+
+.lng-curr {
+	display: inline-block;
+	height: 22px;
+	width: 93px;
+	border-radius: 11px;
+	box-shadow: inset 0 2px 10px rgba(0, 0, 0, .4);
+	background: #fff;
+	vertical-align: top;
+	margin: 6px 0;
+}
+header .phone{
+	position:absolute;
+	top:0;
+	right:0;
+	vertical-align: bottom;
+	text-align: right;
+	line-height:1;
+	height:52px;
+}
+header .phone address{
+	font-size:22px;
+	line-height: 34px;
+	font-weight:bold;
+	color:#ff4625;
+	vertical-align: middle;
+	padding-left:18px;
+	background:url(i/sprite.png) 0 -33px no-repeat;
+}
+header .phone b{
+	color:#999;
+}
+header .phone > span{
+	font-size:12px;
+	line-height:18px;
+}
+header .phone i{
+	font-style:normal;
+	color:#25a5cf;
+}
+
+.central{
+	background: url(i/bg-content.png), linear-gradient(to bottom, #40bfff 0%, #0088cc 100%);
+	box-shadow: inset 0 2px 0 rgba(255, 255, 255, .4), inset 0 0 40px #fff, 0 1px 5px rgba(0,0,0,.3);
+	border-radius: 17px;
+}
+.logo-img{
+	margin:7px 12px;
+}
+
+dl.tabs{
+	margin:0 20px;
+}
+dl.tabs>dt, dl.tabs>dd{
+	display:none;
+}
+dl.tabs>dd{
+	background-color: #ffffff;
+	background-image: url(i/bg-body.png);
+	background-repeat: repeat;
+	background-position: center;
+	border-radius: 0 20px 20px 20px;
+	border:1px solid #148ac5;
+	box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, .4), inset 0 1px 15px rgba(0,0,0,.4), 0 1px 0 rgba(0,222,255,.2);
+}
+dl.tabs>dt.active, dl.tabs>dt.active+dd{
+	display:block;
+}
+.r-and-p, .book-tickets{
+	padding:15px 20px;
+	float:left;
+	background:#fff;
+	border-radius:20px;
+	overflow:hidden;
+	*zoom:1;
+}
+
+.r-and-p{
+	margin:12px 5px 10px 10px;
+	width:215px;
+}
+.r-and-p h1{
+	font-size:16px;
+	line-height:24px;
+	color:#056696;
+	padding-left:34px;
+	margin-top:0;
+	background:url(i/r-and-p.png) 0 0 no-repeat;
+}
+.rec-payment{
+	margin-bottom:22px;
+}
+
+.desination h1{
+	background-position: 0 -25px;
+}
+
+
+.book-tickets{
+	margin:12px 10px 10px 5px;
+	width:613px;
+}
+
+.shadowed{
+	box-shadow:0 2px 4px rgba(0,0,0,.17);
+}

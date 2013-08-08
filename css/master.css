@@ -66,8 +66,7 @@ header {
 	padding: 0 10px 0 12px;
 	margin-right: 14px;
 	color: #fff;
-	background-image: url(i/bg-content.png),
-		linear-gradient(to bottom, #40bfff 0%, #0088cc 100%);
+	background-image: url(i/bg-content.png), linear-gradient(to bottom, #40bfff 0%, #0088cc 100%);
 	box-shadow: inset 0 2px 0 rgba(255, 255, 255, .5), inset 0 0 8px #fff;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
 	vertical-align: bottom;
@@ -79,8 +78,7 @@ header {
 	margin: 0 4px 0 0;
 }
 
-.head-block a:hover,.head-block a:focus,.head-block-login a:hover,.head-block-login a:focus
-	{
+.head-block a:hover,.head-block a:focus,.head-block-login a:hover,.head-block-login a:focus {
 	text-decoration: none;
 	color: #f9ca23;
 }
@@ -175,10 +173,8 @@ header .phone i {
 }
 
 .central {
-	background: url(i/bg-content.png),
-		linear-gradient(to bottom, #40bfff 0%, #0088cc 100%);
-	box-shadow: inset 0 2px 0 rgba(255, 255, 255, .4), inset 0 0 40px #fff, 0 1px
-		5px rgba(0, 0, 0, .3);
+	background: url(i/bg-content.png), linear-gradient(to bottom, #40bfff 0%, #0088cc 100%);
+	box-shadow: inset 0 2px 0 rgba(255, 255, 255, .4), inset 0 0 40px #fff, 0 1px 5px rgba(0, 0, 0, .3);
 	border-radius: 17px;
 	-webkit-box-sizing: border-box;
 	-miz-box-sizing: border-box;
@@ -203,8 +199,7 @@ dl.tabs>dd {
 	background-repeat: repeat;
 	background-position: center;
 	border-radius: 0 20px 20px 20px;
-	box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, .4), inset 0 1px 15px
-		rgba(0, 0, 0, .4), 0 1px 0 rgba(0, 222, 255, .2);
+	box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, .4), inset 0 1px 15px rgba(0, 0, 0, .4), 0 1px 0 rgba(0, 222, 255, .2);
 }
 
 dl.tabs>dt.active,dl.tabs>dt.active+dd {
@@ -212,7 +207,7 @@ dl.tabs>dt.active,dl.tabs>dt.active+dd {
 }
 
 .r-and-p,.book-tickets {
-	padding: 15px 0;
+	padding: 0;
 	float: left;
 	background: #fff;
 	border-radius: 20px;
@@ -227,7 +222,16 @@ dl.tabs>dt.active,dl.tabs>dt.active+dd {
 
 .r-and-p {
 	margin: 12px 5px 10px 10px;
-	width: 255px;
+	width: 265px;
+}
+
+.r-and-p>section {
+	
+}
+
+.r-and-p .rec-payment {
+	margin: 14px 0 20px 0;
+	padding-bottom: 22px;
 }
 
 .r-and-p h1 {
@@ -235,39 +239,73 @@ dl.tabs>dt.active,dl.tabs>dt.active+dd {
 	line-height: 24px;
 	color: #056696;
 	padding-left: 50px;
-	margin-top: 0;
+	margin: 0 0 12px 0;
 	background: url(i/r-and-p.png) 15px 0 no-repeat;
 }
+
 .desination h1 {
-  background-position: 15px -25px;
+	background-position: 15px -27px;
 }
-.passengers{
-	box-shadow: inset 0 5px #0979a8;
-	padding-top:20px;  
+
+.passengers {
+	box-shadow: inset 0 5px #0979a8, inset 0 -8px 18px -10px rgba(0, 0, 0, .2);
+	padding-top: 20px;
+	padding-bottom: 4px;
+	margin-bottom: 20px;
 }
-.passengers h1{
-	background-position: 15px -50px;
+
+.passengers h1 {
+	background-position: 15px -53px;
 }
-.rec-wrap{
-	padding:0 15px;
+
+.rec-wrap,.route div {
+	padding: 0 20px;
+}
+
+.rec-wrap form {
+	padding-top: 5px;
 }
 
 .rec-payment {
 	margin-bottom: 22px;
-	line-height: 28px;
+	line-height: 27px;
 }
 
 .book-tickets {
 	margin: 12px 10px 10px 5px;
-	width: 655px;
+	width: 645px;
+}
+
+.type1 {
+	background: linear-gradient(to bottom, #fefe88, #ed6503);
+	border: none;
+	box-shadow: inset 0 2px 0 rgba(255, 255, 255, .3), inset 0 0 10px rgba(255, 255, 255, .5), 0 1px 3px rgba(0, 0, 0, .3);
+	font-weight: bold;
+	color: black;
+	text-shadow: 0 1px rgba(255, 255, 255, .4);
 }
 
 .people h2 {
 	font-size: 12px;
 	color: blue;
 	text-transform: uppercase;
-	margin: 0;
-	line-height: 34px;
+	margin: 4px 0 3px 0;
+	line-height: 16px;
+}
+
+.rec-payment {
+	position: relative;
+}
+
+.rec-payment:after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 8px;
+	background: transparent;
+	content: "";
+	box-shadow: 0 8px 8px rgba(0, 0, 0, .12);
+	bottom: 0;
 }
 
 .rec-payment article>div {
@@ -275,45 +313,39 @@ dl.tabs>dt.active,dl.tabs>dt.active+dd {
 	z-index: 1;
 }
 
-.rec-payment span,.rec-payment b,.rec-payment i {
+.rec-payment span,.rec-payment b,.rec-payment strong {
 	display: inline-block;
 	background: #fff;
 	z-index: 2;
-	color: #999;
-	font-style: normal;
-	background: #fff;
+	color: #666;
 }
 
 .rec-payment article {
-	margin-bottom: 16px;
+	margin-bottom: 7px;
 }
 
 .rec-payment input {
-	width: 106px;
 	margin: 0 10px 0 0;
 }
 
-.type1 {
-	border-radius: 30px;
-	background: linear-gradient(to bottom, #ecbd27, #ec7e27);
-	border: none;
-	box-shadow: inset 0 2px rgba(255, 255, 255, .6), inset 0 -1px rgba(0, 0, 0, .2);
-	font-weight: bold;
-	color: black;
-}
-
 .rec-payment b {
-	color: black;
+	color: #2f2f2f;
 }
 
 .rec-payment .extra-payment b {
-	color: blue;
+	text-transform: uppercase;
+	color: #056696;
+	font-size: 12px;
 }
 
-.rec-payment article>div i {
+.rec-payment span,.rec-payment .extra-payment b {
+	padding-right: .4em;
+}
+
+.rec-payment strong {
 	float: right;
-	color: red;
-	font-weight: bold;
+	color: #ff7e00;
+	padding-left: .4em;
 }
 
 .rec-payment article>div:before {
@@ -321,11 +353,15 @@ dl.tabs>dt.active,dl.tabs>dt.active+dd {
 	width: 100%;
 	height: 14px;
 	content: "";
-	border-bottom: 1px dotted blue;
+	border-bottom: 1px dotted #666;
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: -1
+}
+
+.rec-payment label {
+	color: #ff7e00;
 }
 
 .result {
@@ -333,46 +369,43 @@ dl.tabs>dt.active,dl.tabs>dt.active+dd {
 	line-height: 1.25;
 }
 
-.result i {
-	color: red;
-	font-weight: bold;
-	float: right;
+.result b {
+	color: #333333;
 }
 
 .route h2 {
 	color: white;
 	text-transform: uppercase;
-	background: blue url(i/fligh_sprite.png) 15px 0 no-repeat;
-	padding: 0 35px;
-	margin: 15px 0;
-	font-size: 16px;
-	line-height: 20px;
+	background-image: url(i/fligh_sprite.png), linear-gradient(to bottom, #0ca0c4, #097aa9);
+	background-position: 20px 0, 0 0;
+	background-repeat: no-repeat, repeat-x;
+	padding: 0 0 0 40px;
+	margin: 10px 0 3px 0;
+	font-size: 14px;
+	line-height: 25px;
+	box-shadow: 0 3px 0 rgba(0, 0, 0, .1);
 }
 
 .route .back h2 {
-	background-position: 15px -19px;
+	background-position: 20px -25px, 0 0;
 }
 
 .route article {
 	margin: 0;
 }
 
-.route div {
-	margin: 15px;
-}
-
 .route h3 {
-	font-size: 16px;
+	font-size: 12px;
 	line-height: 20px;
 	margin: 0;
 	color: #056696;
 	text-transform: uppercase;
-	background: url(i/fligh_sprite.png) left -37px no-repeat;
+	background: url(i/fligh_sprite.png) left -50px no-repeat;
 	padding-left: 16px;
 }
 
 .route .arrive h3 {
-	background-position: left -56px;
+	background-position: left -70px;
 }
 
 .route h3 i {
@@ -380,96 +413,212 @@ dl.tabs>dt.active,dl.tabs>dt.active+dd {
 	font-style: normal;
 	padding-right: 25px;
 	padding-left: 5px;
-	font-size: 14px;
-	line-height: 18px;
 	vertical-align: baseline;
 	background-image: url(i/flags.png);
 	background-repeat: no-repeat;
-	background-position: right 18px;
+	background-position: right 15px;
 }
 
 .route h3.country-usa i {
-	background-position: right -18px;
+	background-position: right -15px;
 }
 
 .route h3.country-mdl i {
-	background-position: right -36px;
+	background-position: right -30px;
 }
 
 .route h3.country-rus i {
 	background-position: right 0;
 }
 
-.route time .info {
+.info {
 	display: inline-block;
 	width: 18px;
-	height: 18px;
-	margin:0 5px;
+	height: 16px;
+	margin: 0 5px;
 	cursor: pointer;
 	background: url(i/sprite.png) 0 -67px no-repeat;
 	vertical-align: bottom;
 }
 
-.route time .info:hover,.route time .info:focus {
+.info:hover,.info:focus {
 	background-position: -18px -67px;
 }
 
-.route p {
+.route p,.route time {
+	display: block;
 	margin: 0;
 	vertical-align: middle;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0;
 }
 
 .route p img {
 	margin-right: 5px;
 }
 
-.route div.wait{
-	margin-right:0;
-	margin-left:0;
-	padding:5px 20px;
-	background:#e5eaec;
-	box-shadow:inset 0 4px 4px -2px rgba(0,0,0,.2);
-  color:#FF7E00;
-  font-weight:bold;
-  font-size:13px;
-  line-height: 1.25;
+.route div.wait {
+	margin-right: 0;
+	margin-left: 0;
+	padding: 5px 20px;
+	margin-bottom: 1px;
+	background: #e5eaec;
+	box-shadow: inset 0 7px 7px -2px rgba(0, 0, 0, .2);
+	color: #FF7E00;
+	font-size: 13px;
+	line-height: 1.25;
 }
 
-.wait .note{
-	color:red;
-  font-size:12px;
+.wait b,.wait.span {
+	display: block;
 }
 
-.passengers ul{
+.wait span {
+	color: red;
+	font-size: 12px;
+}
+
+.route .depart,.route .arrive {
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.route .depart {
+	background: #f2f3f4;
+}
+
+.passengers ul {
 	list-style: none;
-	margin:0 15px;
-	padding:0;
-}
-.passengers li{
-	padding-right:10px;
-	line-height:1;
-	margin:8px 0;
-	position:relative;
-}
-.passengers li b{
-	display:block;
-	color:#ff7e00;
-	font-size:13px;
-}
-li[class^="pass"]:after{
-	display:block;
-	position:absolute;
-	bottom:0;
-	right:0;
-	width:15px;
-	height:15px;
-	background:#eee url(i/sprite.png) -15px 0 no-repeat;
-	content:"";
-}
-li.pass-ok:after{
-	background-position: 0 0; 
-}
-li.pass-alert:after{
-  background-position: -15px 0; 
+	margin: 0 15px;
+	padding: 0;
 }
 
+.passengers li {
+	padding-right: 10px;
+	line-height: 1;
+	margin: 8px 0;
+	position: relative;
+}
+
+.passengers li b {
+	display: block;
+	color: #ff7e00;
+}
+
+li[class^="pass"]:after {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 18px;
+	height: 18px;
+	background: url(i/sprite.png) -15px 0 no-repeat;
+	content: "";
+}
+
+li.pass-ok:after {
+	background-position: 0 -85px;
+}
+
+li.pass-alert:after {
+	background-position: 0 -103px;
+}
+
+/* ************ */
+.header {
+	font-size: 18px;
+	color: #257aa5;
+	line-height: 31px;
+	vertical-align: middle;
+	margin: 7px 12px 18px 12px;
+	padding-left: 38px;
+	vertical-align: baseline;
+	background: url(i/sprite.png) 0 -121px no-repeat;
+}
+
+.header small {
+	display: inline-block;
+	line-height: 16px;
+	border: 0;
+	border-left: 1px dotted;
+	margin-left: 6px;
+	padding-left: 6px;
+	line-height: 16px;
+}
+
+.book-tickets h2 {
+	font-size: 16px;
+	line-height: 18px;
+	margin: 0 0 0 8px;
+	padding-left: 32px;
+	background: url(i/sprite.png) -100px 0 no-repeat;
+	color: #056696;
+	position: relative;
+	z-index: 1;
+}
+
+.book-tickets h2:before {
+	display: block;
+	position: absolute;
+	content: "";
+	height: 8px;
+	width: 595px;
+	top: 0;
+	border-bottom: 2px solid #056696;
+	z-index: -1;
+}
+
+.book-passengers h2 {
+	background-position: 0 -152px;
+}
+
+.book-insurance h2 {
+	background-position: 0 -170px;
+}
+
+.book-recipient h2 {
+	background-position: 0 -188px;
+}
+
+.book-tickets h2 b {
+	padding-right: 8px;
+	background: #fff;
+}
+
+.book-tickets h2 span {
+	color: #0066cc;
+	font-size: 14px;
+	border-bottom: 1px dotted;
+	background: #fff;
+}
+
+.book-tickets h2 strong {
+	color: #ff7e00;
+	border-bottom-color: transparent;
+	background: #fff;
+}
+
+.book-tickets h2 div {
+	display: inline-block;
+	float: right;
+	background: #fff;
+	padding: 0 8px;
+}
+
+.book-tickets article{
+	margin:0 20px;
+}
+
+.book-tickets h3{
+	color:#ff7e00;
+	font-size:14px;
+	line-height:20px;
+} 
+.controls {
+	display: block;
+	float:left;
+	height: 62px;
+	margin-right:10px;
+	overflow:hidden;
+}

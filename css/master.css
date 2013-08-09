@@ -23,6 +23,17 @@ time {
 	display: inline-block;
 }
 
+.required:after {
+	display: inline;
+	content: "*";
+	color: red;
+	padding-left: .3em;
+}
+
+.hidden input {
+	display: none;
+}
+
 .container {
 	width: 980px;
 	margin-right: auto;
@@ -155,7 +166,7 @@ header .phone address {
 	color: #ff4625;
 	vertical-align: middle;
 	padding-left: 18px;
-	background: url(i/sprite.png) 0 -33px no-repeat;
+	background: url(i/sprite.png) -87px -33px no-repeat;
 }
 
 header .phone b {
@@ -209,15 +220,17 @@ dl.tabs>dt.active,dl.tabs>dt.active+dd {
 .r-and-p,.book-tickets {
 	padding: 0;
 	float: left;
-	background: #fff;
-	border-radius: 20px;
-	overflow: hidden;
 	-webkit-box-sizing: border-box;
 	-miz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+.r-and-p,.round-block {
+	background: #fff;
+	border-radius: 20px;
+	overflow: hidden;
+	margin-bottom: 10px;
 	*zoom: 1;
-	-miz-box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 .r-and-p {
@@ -231,7 +244,6 @@ dl.tabs>dt.active,dl.tabs>dt.active+dd {
 
 .r-and-p .rec-payment {
 	margin: 14px 0 20px 0;
-	padding-bottom: 22px;
 }
 
 .r-and-p h1 {
@@ -277,12 +289,19 @@ dl.tabs>dt.active,dl.tabs>dt.active+dd {
 }
 
 .type1 {
-	background: linear-gradient(to bottom, #fefe88, #ed6503);
-	border: none;
-	box-shadow: inset 0 2px 0 rgba(255, 255, 255, .3), inset 0 0 10px rgba(255, 255, 255, .5), 0 1px 3px rgba(0, 0, 0, .3);
+	background: linear-gradient(to bottom, #fefe88, #ed6503) 0 0 repeat-x;
+	border: 1px solid transparent;
+	background-origin: border-box; box-shadow : inset 0 2px 0 rgba( 255, 255, 255, .3), inset 0 0 10px rgba( 255, 255, 255, .5), 0 1px 3px rgba( 0, 0, 0, .3);
 	font-weight: bold;
-	color: black;
-	text-shadow: 0 1px rgba(255, 255, 255, .4);
+	color: #49340a;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, .4);
+	box-shadow: inset 0 2px 0 rgba(255, 255, 255, .3), inset 0 0 10px rgba(255, 255, 255, .5), 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+.type1:active {
+	box-shadow: inset 0 2px 0 rgba(255, 255, 255, .3), inset 0 0 10px rgba(255, 255, 255, .5), 0 1px 3px rgba(255, 255, 255, .7);
+	border-color: #5b8ba3;
+	background: linear-gradient(to bottom, #fff, #80807f) 0 0 repeat-x;
 }
 
 .people h2 {
@@ -293,11 +312,12 @@ dl.tabs>dt.active,dl.tabs>dt.active+dd {
 	line-height: 16px;
 }
 
-.rec-payment {
+.bottom-shadow {
 	position: relative;
+	padding-bottom: 22px;
 }
 
-.rec-payment:after {
+.bottom-shadow:after {
 	display: block;
 	position: absolute;
 	width: 100%;
@@ -438,7 +458,7 @@ dl.tabs>dt.active,dl.tabs>dt.active+dd {
 	margin: 0 5px;
 	cursor: pointer;
 	background: url(i/sprite.png) 0 -67px no-repeat;
-	vertical-align: bottom;
+	vertical-align: top;
 }
 
 .info:hover,.info:focus {
@@ -531,10 +551,10 @@ li.pass-alert:after {
 	color: #257aa5;
 	line-height: 31px;
 	vertical-align: middle;
-	margin: 7px 12px 18px 12px;
+	margin: 7px 0 18px 12px;
 	padding-left: 38px;
 	vertical-align: baseline;
-	background: url(i/sprite.png) 0 -121px no-repeat;
+	background: url(i/sprite.png) -69px -121px no-repeat;
 }
 
 .header small {
@@ -547,15 +567,30 @@ li.pass-alert:after {
 	line-height: 16px;
 }
 
+.book-tickets label {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.book-tickets input+label {
+	text-transform: none;
+}
+
 .book-tickets h2 {
 	font-size: 16px;
 	line-height: 18px;
-	margin: 0 0 0 8px;
+	margin: 12px 0 12px 8px;
 	padding-left: 32px;
 	background: url(i/sprite.png) -100px 0 no-repeat;
 	color: #056696;
 	position: relative;
 	z-index: 1;
+}
+
+.book-tickets .book-passengers h2 {
+	margin-bottom: 0;
 }
 
 .book-tickets h2:before {
@@ -581,16 +616,22 @@ li.pass-alert:after {
 	background-position: 0 -188px;
 }
 
+.book-insurance h2,.book-recipient h2 {
+	
+}
+
 .book-tickets h2 b {
 	padding-right: 8px;
 	background: #fff;
 }
 
-.book-tickets h2 span {
+.book-tickets h2 em {
 	color: #0066cc;
 	font-size: 14px;
+	font-style: normal;
 	border-bottom: 1px dotted;
 	background: #fff;
+	border-bottom: 1px dotted;
 }
 
 .book-tickets h2 strong {
@@ -599,26 +640,613 @@ li.pass-alert:after {
 	background: #fff;
 }
 
-.book-tickets h2 div {
+.book-tickets h2 span {
 	display: inline-block;
 	float: right;
 	background: #fff;
 	padding: 0 8px;
 }
 
-.book-tickets article{
-	margin:0 20px;
+.book-passengers article {
+	padding: 20px 0;
 }
 
-.book-tickets h3{
-	color:#ff7e00;
-	font-size:14px;
-	line-height:20px;
-} 
+.book-tickets .control-group {
+	margin: 0 17px;
+}
+
+.book-passengers h3,.payment-details h3 {
+	color: #ff7e00;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0 17px;
+}
+
+.book-tickets input,.book-tickets select {
+	display: block;
+}
+
+.error,.error input,.error label,.error select {
+	color: red !important;
+}
+
+.control-group {
+	margin-bottom: 4px;
+}
+
 .controls {
 	display: block;
-	float:left;
-	height: 62px;
-	margin-right:10px;
-	overflow:hidden;
+	float: left;
+	margin-right: 10px;
+	padding-right: 14px;
+	min-height: 64px;
+}
+
+.controls span {
+	display: block;
+	font-size: 12px;
+	line-height: 1.1;
+	font-size: 12px;
+	width: 100%;
+}
+
+.controls label span {
+	display: inline;
+}
+
+.control-group.line3 .controls {
+	min-height: 35px;
+}
+
+.control-group.line3 select,.control-group.line3 input {
+	display: inline-block;
+}
+
+.controls input,.controls select {
+	width: 100%;
+}
+
+.control-group.line3 select {
+	margin: 0 15px 0 10px;
+	width: 180px;
+}
+
+.control-group.line3 label {
+	margin-right: 15px;
+}
+
+.control-group .controls:last-child {
+	margin-right: 0;
+}
+
+.line3 .controls {
+	padding-right: 0;
+}
+
+input[type="checkbox"],input[type="radio"] {
+	display: none !important;
+}
+
+input[type="checkbox"]+label,input[type="radio"]+label {
+	display: inline-block;
+	line-height: 1;
+	height: 15px;
+	margin: 0 !important;
+	cursor: pointer;
+	vertical-align: middle;
+	color: #444;
+	cursor: pointer;
+}
+
+.radio-group label {
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: none;
+}
+
+.radio-group input+label {
+	width: 43px;
+}
+
+input[type="checkbox"]+label::before,input[type="radio"]+label::before {
+	content: "";
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	margin: 0 5px 0 0;
+	background-image: url(i/sprite.png);
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+
+input[type="checkbox"]+label::before {
+	background-position: -15px -206px;
+}
+
+input[type="radio"]+label::before {
+	background-position: -45px -206px;
+}
+
+input[type="checkbox"]:checked+label::before {
+	background-position: 0 -206px;
+}
+
+input[type="radio"]:checked+label::before {
+	background-position: -30px -206px;
+}
+
+.error input[type="checkbox"]+label::before {
+	background-position: -15px -206px;
+}
+
+.error input[type="radio"]+label::before {
+	background-position: -75px -206px;
+}
+
+.error input[type="checkbox"]:checked+label::before {
+	background-position: 0 -206px;
+}
+
+.error input[type="radio"]:checked+label::before {
+	background-position: -60px -206px;
+}
+
+.radio-group {
+	height: 20px;
+	padding: 5px 0;
+}
+
+[class*="name-"] {
+	width: 164px;
+}
+
+input[id*="card-number"] {
+	width: 166px;
+}
+
+[class*="date-"] {
+	width: 104px;
+}
+
+[class*="doc-number"] {
+	width: 196px;
+}
+
+[class*="citizen"] {
+	width: 246px;
+}
+
+.insurace-policy {
+	
+}
+
+.insurance-description {
+	float: left;
+	width: 485px;
+	margin-left: 17px;
+}
+
+.insurance-description ul {
+	padding: 0;
+	margin: 0 0 10px 0;
+	list-style: none;
+}
+
+.insurance-description ul li {
+	padding-left: 20px;
+	position: relative;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.insurance-description ul li:before {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 8px;
+	height: 20px;
+	background: url(i/sprite.png) 0 -33px no-repeat;
+	content: "";
+}
+
+.insurance-description input+label {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.book-insurance {
+	padding-bottom: 20px;
+}
+
+.book-insurance a {
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+
+.book-insurance h3 {
+	font-size: 12px;
+	line-height: 20px;
+	margin: 10px 17px;
+	text-transform: uppercase;
+}
+
+.book-tickets p {
+	margin: 0 17px;
+	line-height: 18px;
+}
+
+.insurance-price {
+	margin: 0 20px;
+}
+
+.insurance-price {
+	font-size: 13px;
+	line-height: 19px;
+}
+
+.insurance-price span,.insurance-price strong,.insurance-price a {
+	display: block;
+}
+
+.insurance-price strong {
+	color: #ff7e00;
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.receipt .clearfix {
+	margin-left: 17px;
+}
+
+.receipt .rec-type label {
+	padding-right: 60px;
+}
+
+.rec-contacts .controls {
+	width: 180px;
+}
+
+.payment {
+	background: #fae7d4;
+	padding-bottom: 15px;
+}
+
+.payment-details {
+	position: relative;
+}
+
+[class^="pdetails-"] {
+	display: none;
+}
+
+.payment-details .active {
+	display: block;
+}
+
+.payment-type .btn {
+	display: inline-block;
+	width: 127px;
+	height: 20px;
+	padding: 10px 0 10px 31px;
+	margin-right: 10px;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, .2) 11%, rgba(0, 0, 0, .2) 89%) 0 0 repeat-x;;
+	background-color: #fff; border-radius : 2px;
+	border: 1px solid #eed0b4;
+	box-shadow: inset 0 2px 32px rgba(255, 255, 255, .5), 0 1px 1px rgba(0, 0, 0, .4); position : relative;
+	font-weight: bold;
+	position: relative;
+	border-radius: 2px;
+}
+
+.payment-type .btn:hover,.payment-type .btn:hover {
+	background: #fff linear-gradient(to bottom, rgba(0, 0, 0, .2) 11%, rgba(255, 255, 255, .2) 89%) 0 0 repeat-x;;
+	box-shadow: inset 0 2px 6px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .9);
+}
+
+.payment-type .btn:active {
+	top: 1px;
+}
+
+.payment-type .btn:before {
+	display: block;
+	position: absolute;
+	content: "";
+	width: 15px;
+	height: 15px;
+	left: 10px;
+	top: 13px;
+	background: url(i/sprite.png) -45px -206px no-repeat;
+}
+
+.payment-type .btn.active:before {
+	background-position: -30px -206px;
+}
+
+.payment-type .btn:after {
+	display: block;
+	position: absolute;
+	left: 28px;
+	top: 10px;
+	content: "";
+	width: 25px;
+	height: 23px;
+	background-image: url(i/sprite.png);
+	background-repeat: no-repeat;
+}
+
+.payment-type .btn.payment-visa:after {
+	background-position: -34px -68px;
+}
+
+.payment-type .btn.payment-ib:after {
+	background-position: -34px -91px;
+}
+
+.payment-type .btn.payment-office:after {
+	background-position: -34px -114px;
+}
+
+.payment-type .btn.payment-hand:after {
+	background-position: -34px -137px;
+}
+
+.payment-type .btn span {
+	display: inline-block;
+	font-size: 14px;
+	color: #257aa5;
+	border-bottom: 1px dotted;
+	line-height: 20px;
+	height: 18px;
+	position: relative;
+	letter-spacing: -0.01em;
+}
+
+.payment-internet,.payment-cash {
+	padding: 10px 0;
+	margin: 0 23px;
+	line-height: 40px;
+}
+
+.payment-type b {
+	display: inline-block;
+	font-size: 14px; line-height : 1; width : 219px;
+	vertical-align: middle;
+	padding-left: 18px;
+	width: 219px;
+	line-height: 1; width : 219px; vertical-align : middle; padding-left : 18px;
+	background: url(i/sprite.png) -87px 1em no-repeat;
+}
+
+.payment-internet {
+	border-bottom: 1px solid #fff;
+}
+
+.payment-cash {
+	border-top: 1px solid #999;
+}
+
+.payment-internet b {
+	background-position: -87px 0px;
+}
+
+.payment-cash b {
+	background-position: -87px -14px;
+}
+
+.payment-details .controls {
+	min-height: 0;
+}
+
+.control-group.addr .controls {
+	width: 183px;
+}
+
+.control-group .build {
+	width: 58px;
+}
+
+.control-group .office {
+	width: 106px;
+}
+
+.control-group .ph-num {
+	width: 225px;
+}
+
+.pdetails-visa .type1{
+	float:right;
+	margin:10px 0;
+}
+.pdetails-visa .controls, .pdetails-ib .controls {
+	display: block;
+	float: none;
+	margin-bottom: 9px;
+	padding: 0;
+}
+
+.back-card,.face-card {
+	width: 285px;
+	height: 138px;
+	padding: 50px 9px 0 9px;
+	background: url(i/card_bg.png) 0 0 no-repeat;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	*zoom: 1;
+}
+
+.back-card {
+	background-position: 0 -193px;
+}
+
+.face-card {
+	
+}
+
+.card-number label {
+	display: block;
+}
+
+.face-card input {
+	width: 51px;
+	display: inline-block;
+}
+
+.payment-details label {
+	font-size: 14px;
+}
+
+.pdetails-hand  label {
+	font-size: 12px;
+}
+
+.card-valid label {
+	width: 46px;
+	margin-bottom: 0;
+	vertical-align: middle;
+}
+
+.card-holder input {
+	width: 261px;
+}
+
+.back-card .card-cvv {
+	margin-left: 217px;
+}
+
+.back-card .card-value {
+	margin-left: 115px;
+}
+
+.back-card .card-value label {
+	width: 68px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.back-card .card-value select {
+	display: inline-block;
+	width: 64px;
+	vertical-align: middle;
+}
+
+#card-cvv {
+	width: 52px;
+}
+
+[class^="pdetails-"] {
+	padding: 10px 0;
+}
+
+.pdetails-office {
+	padding:10px 17px;
+}
+.pd-office .controls{
+	width:232px;
+}
+.payment-details .btn{
+	margin-top:20px;
+}
+#maps{
+	float:right;
+	padding:0 0 15px 55px;
+}
+
+.pay-confirm{
+	width:640px;
+	height:141px;
+	margin-left:310px;
+	position:relative;
+}
+
+.tr-check{
+	background:url(i/bg-check.png) 0 0 no-repeat;
+	width:608px;
+	height:96px;
+	position:absolute;
+	top:12px;
+	left:6px;
+	padding:15px 10px;
+	z-index:5;
+	font-size:12px;
+	font-weight:bold;
+	line-height:18px;
+}
+
+.tr-check p{
+	padding-left:60px;
+	margin-left:25px;
+	background:url(i/sprite.png) -75px -221px no-repeat;
+}
+.pay-confirm:before,.pay-confirm:after{
+	position:absolute;
+	display:block;
+	content:"";
+	border-radius:10px;
+	border:2px solid #c8c8c8;
+	box-shadow:0 1px 2px rgba(255,255,255,.8), inset 0 1px 2px  rgba(0,0,0,.2);
+	z-index:1;
+}
+.pay-confirm:before{
+	background:rgba(255,255,255,.4);
+	width:640px;
+	height:10px;
+	top:5px;
+	left:0;
+}
+
+.pay-confirm:after{
+	width:634px;
+	height:2px;
+	top:9px;
+	left:3px;;
+}
+
+.pay-summa{
+	width:274px;
+	height:43px;
+	border-radius:25px;
+	background:#fff linear-gradient(to bottom, rgba(255,255,255,.1) 3%, rgba(0,0,0,.1) 97%);
+}
+.pay-summa a{
+	border-radius:20px;
+	background: linear-gradient(to bottom, #ffb400, #ff3300);
+	box-shadow:0 1px 3px rgba(0,0,0,.3), inset 0 1px 2px rgba(255,255,255,.5);
+	text-shadow: 0 1px rgba(255,255,255,.4);
+	color:#873b00;
+	font-size:22px;
+	font-weight:bold;
+	width:70px;
+	height:34px;
+	display:inline-block;
+	line-height: 34px;
+	vertical-align: middle;
+	text-align:center;
+	padding-left:55px;
+	position:relative;
+	border:1px solid transparent;
+	background-origin: border-box;	
+}
+
+.pay-summa a:before{
+	display:block;
+	position:absolute;
+	top: 4px;
+	left:0;
+	width:53px;
+	height:27px;
+	content:"";
+	background:url(i/sprite.png) -60px -152px no-repeat;
+	border-right: 2px dotted #8f3d00;
+}
+
+.pay-summa a:focus, .pay-summa a:hover{
+	text-decoration: none;
+}
+.pay-summa a:active{
+	border-color: #e68a33;
+	box-shadow:0 0 10px #ff6000;
+	background: linear-gradient(to bottom, #e7e7e6, #565655);
 }

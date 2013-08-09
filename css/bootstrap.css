@@ -586,11 +586,10 @@ table {
 }
 .table th,
 .table td {
-  padding: 8px;
+  padding: 0;
   line-height: 20px;
   text-align: left;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
 }
 .table th {
   font-weight: bold;
@@ -846,10 +845,10 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "PT Seans","Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 label {
-  display: block;
+  display: inline-block;
   margin-bottom: 3px;
 }
 select,
@@ -1015,11 +1014,6 @@ textarea:-ms-input-placeholder {
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color: #999999;
-}
-.radio,
-.checkbox {
-  min-height: 20px;
-  padding-left: 20px;
 }
 .radio input[type="radio"],
 .checkbox input[type="checkbox"] {
@@ -1609,9 +1603,6 @@ input.search-query {
   float: left;
   margin-right: 3px;
   margin-left: 0;
-}
-.control-group {
-  margin-bottom: 10px;
 }
 legend + .control-group {
   margin-top: 20px;

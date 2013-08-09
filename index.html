@@ -60,7 +60,7 @@
 			<dt class="active">Flight</dt>
 			<dd class="clearfix">
 				<div class="r-and-p shadowed">
-					<section class="rec-payment">
+					<section class="rec-payment bottom-shadow">
 						<h1>Recipient and payment</h1>
 						<div class="rec-wrap">
 							<article class="people">
@@ -230,191 +230,211 @@
 					</section>
 				</div>
 
-				<section class="book-tickets shadowed">
-					<h1 class="header">
-						Book tickets <small>The information of the passengers and pay the ticket</small>
-					</h1>
-					<form action="book" id="booking" name="booking">
-						<section class="book-passengers">
-							<h2>
-								<b>Passengers</b>
-								<div>
-									<strong>Attention!</strong>
-									<span>Read the important information on the flight!</span>
-									<a href="#" class="info"></a>
-								</div>
-							</h2>
-							<article class="clearfix">
-								<h3>Adult 1</h3>
-								<div class="control-group">
-									<div class="controls">
-										<label for="ad2-s">Sex</label>
-										<div id="ad2-s" class="controls radio-group">
-											<label class="radio"><input type="radio" name="sex[0]" value="mr" checked>Mr.</label><label
-												class="radio"
-											><input type="radio" name="sex[0]" value="ms">Ms.</label>
+				<form action="book" id="booking" name="booking">
+					<section class="book-tickets">
+						<div class="round-block shadowed">
+							<h1 class="header">
+								Book tickets <small>The information of the passengers and pay the ticket</small>
+							</h1>
+							<section class="book-passengers">
+								<h2>
+									<b>Passengers</b>
+									<span>
+										<strong>Attention!</strong> <em>Read the important information on the flight!</em>
+										<a href="#" class="info"></a>
+									</span>
+								</h2>
+								<article class="clearfix bottom-shadow">
+									<h3>Adult 1</h3>
+									<div class="control-group clearfix">
+										<div class="controls error sex">
+											<label for="ad2-s">Sex</label>
+											<div id="ad2-s" class="radio-group">
+												<input type="radio" id="sex-mr-radio0" name="sex[0]" value="mr" checked hidden> <label class="radio"
+													for="sex-mr-radio0"
+												>Mr.</label> <input type="radio" id="sex-ms-radio0" name="sex[0]" value="ms" hidden> <label class="radio"
+													for="sex-ms-radio0"
+												>Ms.</label>
+											</div>
 											<span class="help-error">Выберите пол</span>
 										</div>
-									</div>
-									<div class="controls">
-										<label for="f-name0" class="required">First / given name *</label> <input type="text" id="f-name0"
-											name="f-name[0]" placeholder="Ex. Sergey"
-										>
-									</div>
-									<div class="controls">
-										<label for="l-name0" class="required">Last name / surname *</label> <input type="text" id="l-name0"
-											name="l-name[0]" placeholder="Ex. Popov"
-										>
-									</div>
-									<div class="controls">
-										<label for="b-date0" class="required">Date of birth *</label> <input type="text" id="b-date0" name="b-date[0]"
-											placeholder="--/--/--"
-										>
-									</div>
-								</div>
-								<div class="control-group">
-									<div class="controls">
-										<label for="citizen0" class="required">Citizenship *<a href="#" class="info"></a></label>
-										<select id="citizen0" name="citizen[0]">
-											<option disabled>Ex. Russia Fedeartion</option>
-											<option>Russia Fedeartion</option>
-											<option>Russia Fedeartion</option>
-											<option>Russia Fedeartion</option>
-											<option>Russia Fedeartion</option>
-										</select>
-									</div>
-									<div class="controls">
-										<label for="docnumber0" class="required">Document number *</label> <input type="text" id="docnumber0"
-											name="docnumber[0]"
-										>
-									</div>
-									<div class="controls">
-										<input type="checkbox"> <label for="validity-date0" class="required">Validity *</label> <input
-											type="text" id="validity-date0" name="validity[0]" placeholder="--/--/--"
-										>
-									</div>
-								</div>
-								<div class="control-group">
-									<div class="controls">
-										<input type="checkbox"> <label for="bonus-card0"></label>
-										<select name="bonus-card[0]" id="bonus-card0">
-											<option disabled>Select bonus card</option>
-											<option>Russia Fedeartion</option>
-											<option>Russia Fedeartion</option>
-											<option>Russia Fedeartion</option>
-											<option>Russia Fedeartion</option>
-										</select>
-									</div>
-									<div class="controls">
-										<label for="card-number0"></label> <input type="text" id="card-number0" name="card-number[0]">
-									</div>
-								</div>
-							</article>
-							<article class="clearfix">
-								<h3>Adult 2</h3>
-								<div class="control-group">
-									<div class="controls">
-										<label for="ad2-s">Sex</label>
-										<div id="ad2-s" class="controls radio-group">
-											<label class="radio"><input type="radio" name="sex[1]" value="mr" checked>Mr.</label><label
-												class="radio"
-											><input type="radio" name="sex[1]" value="ms">Ms.</label>
-											<span class="help-error">Выберите пол</span>
+										<div class="controls name-first">
+											<label for="f-name0" class="required">First / given name</label> <input type="text" id="f-name0"
+												name="f-name[0]" placeholder="Ex. Sergey"
+											>
+										</div>
+										<div class="controls name-last">
+											<label for="l-name0" class="required">Last name / surname</label> <input type="text" id="l-name0"
+												name="l-name[0]" placeholder="Ex. Popov"
+											>
+										</div>
+										<div class="controls date-b">
+											<label for="b-date0" class="required">Date of birth</label> <input type="text" id="b-date0" name="b-date[0]"
+												placeholder="--/--/--"
+											>
 										</div>
 									</div>
-									<div class="controls">
-										<label for="f-name1" class="required">First / given name</label> <input type="text" id="f-name1"
-											name="f-name[1]" placeholder="Ex. Sergey"
-										>
+									<div class="control-group clearfix">
+										<div class="controls error citizen">
+											<label for="citizen0"> <span class="required">Citizenship</span> <a href="#" class="info"></a>
+											</label>
+											<select id="citizen0" name="citizen[0]">
+												<option disabled>Ex. Russia Federation</option>
+												<option>Russia Federation</option>
+												<option>Russia Federation</option>
+												<option>Russia Federation</option>
+												<option>Russia Federation</option>
+											</select>
+											<span>Описание ошибки, советы по ее решению</span>
+										</div>
+										<div class="controls doc-number">
+											<label for="docnumber0" class="required">Document number</label> <input type="text" id="docnumber0"
+												name="docnumber[0]"
+											>
+										</div>
+										<div class="controls date-validity">
+											<input type="checkbox" id="validity-chbox0" name="validity-chbox[0]" hidden> <label
+												for="validity-chbox0"
+											></label> <label for="validity-date0" class="required">Validity</label> <input type="text" id="validity-date0"
+												name="validity[0]" placeholder="--/--/--"
+											>
+										</div>
 									</div>
-									<div class="controls">
-										<label for="l-name1" class="required">Last name / surname</label> <input type="text" id="l-name1"
-											name="l-name[1]" placeholder="Ex. Popov"
-										>
+									<div class="control-group clearfix line3">
+										<div class="controls bonus-card">
+											<input type="checkbox" id="bonus-card-check0" name="bonus-card-check[0]" hidden> <label
+												for="bonus-card-check0"
+											></label> <label for="bonus-card0">Bonus card</label>
+											<select name="bonus-card[0]" id="bonus-card0">
+												<option disabled>Select bonus card</option>
+												<option>Russia Federation</option>
+												<option>Russia Federation</option>
+												<option>Russia Federation</option>
+												<option>Russia Federation</option>
+											</select>
+										</div>
+										<div class="controls card-number">
+											<label for="card-number0">Card number</label> <input type="text" id="card-number0" name="card-number[0]">
+										</div>
 									</div>
-									<div class="controls">
-										<label for="b-date1" class="required">Date of birth</label> <input type="text" id="b-date1" name="b-date[1]"
-											placeholder="--/--/--"
-										>
+								</article>
+								<article class="clearfix">
+									<h3>Adult 2</h3>
+									<div class="control-group clearfix">
+										<div class="controls sex">
+											<label for="ad2-s">Sex</label>
+											<div id="ad2-s" class="radio-group">
+												<input type="radio" id="sex-mr-radio1" name="sex[1]" value="mr" checked hidden> <label class="radio"
+													for="sex-mr-radio1"
+												>Mr.</label> <input type="radio" id="sex-ms-radio1" name="sex[1]" value="ms" hidden> <label class="radio"
+													for="sex-ms-radio1"
+												>Ms.</label>
+											</div>
+										</div>
+										<div class="controls name-first">
+											<label for="f-name1" class="required">First / given name</label> <input type="text" id="f-name1"
+												name="f-name[1]" placeholder="Ex. Sergey"
+											>
+										</div>
+										<div class="controls name-last">
+											<label for="l-name1" class="required">Last name / surname</label> <input type="text" id="l-name1"
+												name="l-name[1]" placeholder="Ex. Popov"
+											>
+										</div>
+										<div class="controls date-b">
+											<label for="b-date1" class="required">Date of birth</label> <input type="text" id="b-date1" name="b-date[1]"
+												placeholder="--/--/--"
+											>
+										</div>
 									</div>
-								</div>
-								<div class="control-group">
-									<div class="controls">
-										<label for="citizen1" class="required">Citizenship <a href="#" class="info"></a></label>
-										<select id="citizen1" name="citizen[1]">
-											<option disabled>Ex. Russia Fedeartion</option>
-											<option>Russia Fedeartion</option>
-											<option>Russia Fedeartion</option>
-											<option>Russia Fedeartion</option>
-											<option>Russia Fedeartion</option>
-										</select>
+									<div class="control-group clearfix">
+										<div class="controls citizen">
+											<label for="citizen1"> <span class="required">Citizenship</span> <a href="#" class="info"></a>
+											</label>
+											<select id="citizen1" name="citizen[1]">
+												<option disabled>Ex. Russia Federation</option>
+												<option>Russia Federation</option>
+												<option>Russia Federation</option>
+												<option>Russia Federation</option>
+												<option>Russia Federation</option>
+											</select>
+										</div>
+										<div class="controls doc-number">
+											<label for="docnumber1" class="required">Document number</label> <input type="text" id="docnumber1"
+												name="docnumber[1]"
+											>
+										</div>
+										<div class="controls date-validity">
+											<input type="checkbox" id="validity-check1" name="validity-check[1]" hidden> <label
+												for="validity-check1"
+											></label> <label for="validity-date1" class="required">Validity</label> <input type="text" id="validity-date1"
+												name="validity[1]" placeholder="--/--/--"
+											>
+										</div>
 									</div>
-									<div class="controls">
-										<label for="docnumber1" class="required">Document number</label> <input type="text" id="docnumber1"
-											name="docnumber[1]"
-										>
+									<div class="control-group clearfix line3">
+										<div class="controls bonus-card">
+											<input type="checkbox" id="bonus-card-check1" name="bonus-card-check[0]" hidden> <label
+												for="bonus-card-check1"
+											></label> <label for="bonus-card1">Bonus card</label>
+											<select name="bonus-card[1]" id="bonus-card1">
+												<option disabled>Select bonus card</option>
+												<option>Russia Federation</option>
+												<option>Russia Federation</option>
+												<option>Russia Federation</option>
+												<option>Russia Federation</option>
+											</select>
+										</div>
+										<div class="controls card-number">
+											<label for="card-number1">Card number</label> <input type="text" id="card-number1" name="card-number[0]">
+										</div>
 									</div>
-									<div class="controls">
-										<input type="checkbox"> <label for="validity-date1" class="required">Validity</label> <input
-											type="text" id="validity-date1" name="validity[1]" placeholder="--/--/--"
-										>
-									</div>
-								</div>
-								<div class="control-group">
-
-									<div class="controls">
-										<input type="checkbox"> <label for="bonus-card1"></label>
-										<select name="bonus-card[1]" id="bonus-card1">
-											<option disabled>Select bonus card</option>
-											<option>Russia Fedeartion</option>
-											<option>Russia Fedeartion</option>
-											<option>Russia Fedeartion</option>
-											<option>Russia Fedeartion</option>
-										</select>
-									</div>
-									<div class="controls">
-										<label for="card-number1"></label> <input type="text" id="card-number1" name="card-number[0]">
-									</div>
-								</div>
-							</article>
-						</section>
-						<section class="book-insurance">
+								</article>
+							</section>
+						</div>
+						<section class="book-insurance round-block shadowed">
 							<h2>
 								<b>Insurance for passengers</b>
 							</h2>
 							<p>Застраховка за пътуване е добавена към заявката за покупка на самолетен билет, за Ваше улеснение.</p>
 							<p>Имайте предвид, че закупуването й не е задължително. В случай, че не желаете да закупите застраховката,
 								моля кликнете върху отметката пред "Застраховка за пътуване ".</p>
-							<h3>Пътническата застраховка гарантира</h3>
-							<div class="insurance-description">
-								<ul>
-									<li>незабавна помощ в случай на внезапно заболяване или злополука</li>
-									<li>покритие на разходите в случай на анулация на полет</li>
-									<li>покритие на разходи при закъснение на полет или кражба на багаж</li>
-									<li>защита на личната сотбственост в страната, от която излитате</li>
-									<li>широк спектър от асистанс услуги</li>
-								</ul>
-								<input type="checkbox" id="insurance" name="insurance"> <label for="insurance">Застраховка за
-									пътуване</label>
-							</div>
-							<div class="insurance-price">
-								<span>Крайна цена на застраховката:</span>
-								<span class="insurance-price-value">3.66 USD</span>
-								<a href="#" class="insurance-terms">Общи условия на застраховката</a>
-								<button type="button" class="btn type1">Add insurance</button>
-							</div>
+							<article class="clearfix">
+								<h3>Пътническата застраховка гарантира</h3>
+								<div class="insurance-description">
+									<ul>
+										<li>незабавна помощ в случай на внезапно заболяване или злополука</li>
+										<li>покритие на разходите в случай на анулация на полет</li>
+										<li>покритие на разходи при закъснение на полет или кражба на багаж</li>
+										<li>защита на личната сотбственост в страната, от която излитате</li>
+										<li>широк спектър от асистанс услуги</li>
+									</ul>
+									<input type="checkbox" id="insurance" name="insurance" hidden> <label for="insurance">Застраховка
+										за пътуване</label>
+								</div>
+								<div class="insurance-price">
+									<span>Крайна цена на застраховката:</span>
+									<strong class="insurance-price-value">3.66 USD</strong>
+									<a href="#" class="insurance-terms">
+										<span>Общи условия на застраховката</span>
+									</a>
+									<button type="button" class="btn type1">Add insurance</button>
+								</div>
+							</article>
 						</section>
-						<section class="book-recipient">
-							<h2>
+
+						<section class="book-recipient round-block shadowed">
+							<h2 class="header">
 								<b>Recipient and payment</b>
 							</h2>
-							<section class="receipt">
-								<div class="control-group">
-									<label> <input type="radio" name="peceipt-type" checked="checked">individual
-									</label> <label> <input type="radio" name="peceipt-type">legal person
-									</label>
+							<div class="receipt bottom-shadow">
+								<div class="control-group rec-type clearfix">
+									<input type="radio" name="peceipt-type" id="peceipt-type1" checked="checked" hidden> <label
+										for="peceipt-type1"
+									>individual</label> <input type="radio" name="peceipt-type" id="peceipt-type2"> <label for="peceipt-type2">legal
+										person</label>
 								</div>
-								<div class="control-group">
+								<div class="control-group rec-contacts clearfix">
 									<div class="controls">
 										<label for="contact-name" class="required">Contact name</label> <input type="text" id="contact-name"
 											name="contact-name"
@@ -432,6 +452,10 @@
 									</div>
 								</div>
 								<div class="control-group">
+									<input type="checkbox" id="receive-receipt" name="receive-receipt" hidden> <label for="receive-receipt">I
+										want to receive the receipt</label>
+								</div>
+								<div class="control-group rec-contacts clearfix">
 									<div class="controls">
 										<label for="receipt-country" class="required">Country</label> <input type="text" id="receipt-country"
 											name="receipt-country"
@@ -448,93 +472,176 @@
 										>
 									</div>
 								</div>
-							</section>
-							<section class="payment">
+							</div>
+
+							<div class="payment">
+
 								<div class="payment-type">
-									<div class="payment-internet">
-										<span>Payment online, via the Internet</span>
-										<label class="payment-visa"> <input type="radio" name="payment-type" checked="checked">
-										</label> <label class="payment-ib"> <input type="radio" name="payment-type">
-										</label>
+									<div class="payment-internet clearfix">
+										<b>Payment online, via the Internet</b>
+										<div class="btn payment-visa active">
+											<span></span>
+										</div>
+										<div class="btn payment-ib">
+											<span>Internet-banking</span>
+										</div>
 									</div>
-									<div class="payment-cash">
-										<span>Payment by cash, check</span>
-										<label class="payment-office"> <input type="radio" name="payment-type">
-										</label> <label class="payment-hand"> <input type="radio" name="payment-type">
-										</label>
+									<div class="payment-cash clearfix">
+										<b>Payment by cash, check</b>
+										<div class="btn payment-office">
+											<span>In Office</span>
+										</div>
+										<div class="btn payment-hand">
+											<span>On hand</span>
+										</div>
 									</div>
 								</div>
+
 								<div class="payment-details">
-									<div class="pdetails-visa">
-										<p class="comission">Комиссион за обслуживание банковской карты составит 450 руб</p>
-										<div class="control-group face-card">
-											<div class="controls">
-												<label for="card-num"> <input type="text" id="card-num0" name="card-num[0]"> <input
-													type="text" name="card-num[1]"
-												> <input type="text" name="card-num[2]"> <input type="text" name="card-num[3]">
-												</label>
+									<div class="pdetails-visa clearfix active">
+										<h3 class="comission">Комиссион за обслуживание банковской карты составит 450 руб</h3>
+										<div class="control-group">
+											<div class="face-card">
+												<div class="controls card-number">
+													<label for="card-num0">Card number</label> <input type="text" id="card-num0" name="card-num[0]"> <input
+														type="text" name="card-num[1]"
+													> <input type="text" name="card-num[2]"> <input type="text" name="card-num[3]">
+												</div>
+												<div class="controls card-valid">
+													<label for="card-valid">Vaild Thru</label> <input type="text" id="card-valid" name="card-valid"
+														placeholder="MM/YY"
+													>
+												</div>
+												<div class="controls card-holder">
+													<input type="text" name="card-holder" placeholder="CARD HOLDER">
+												</div>
 											</div>
-											<div class="controls">
-												<label> <span>Vaild Thru</span> <input type="text" name="card-valid">
-												</label>
-											</div>
-											<div class="controls">
-												<input type="text" name="card-holder">
+											<div class="back-card">
+												<div class="controls card-cvv">
+													<label for="card-cvv">CVV/CVC</label> <input type="text" id="card-cvv" name="card-cvv">
+												</div>
+												<div class="controls card-value">
+													<a href="#" class="info"></a>
+													<label for="card-value">Currency cards</label>
+													<select name="card-value" id="card-value">
+														<option value="rub">RUB</option>
+														<option value="usd">USD</option>
+														<option value="eur">EUR</option>
+													</select>
+												</div>
 											</div>
 										</div>
-										<div class="control-group back-card">
-											<div class="controls">
-												<label for="card-cvv"></label> <input type="text" id="card-cvv" name="card-cvv">
+										<p>
+											Текст про то что передача безопасна
+											<button class="btn type1" type="submit">Оплатить</button>
+										</p>
+
+
+
+									</div>
+									<div class="pdetails-ib active">
+										<div class="control-group">
+											<div class="face-card">
+												<div class="controls card-number">
+													<label for="card-num0">Card number</label> <input type="text" id="card-num0" name="card-num[0]"> <input
+														type="text" name="card-num[1]"
+													> <input type="text" name="card-num[2]"> <input type="text" name="card-num[3]">
+												</div>
+												<div class="controls card-valid">
+													<label for="card-valid">Vaild Thru</label> <input type="text" id="card-valid" name="card-valid"
+														placeholder="MM/YY"
+													>
+												</div>
+												<div class="controls card-holder">
+													<input type="text" name="card-holder" placeholder="CARD HOLDER">
+												</div>
 											</div>
-											<div class="controls">
-												<label for="card-value">Currency cards</label>
-												<select name="card-value" id="card-value">
-													<option value="rub">RUB</option>
-													<option value="usd">USD</option>
-													<option value="eur">EUR</option>
-												</select>
+											<div class="back-card">
+												<div class="controls card-cvv">
+													<label for="card-cvv">CVV/CVC</label> <input type="text" id="card-cvv" name="card-cvv">
+												</div>
+												<div class="controls card-value">
+													<a href="#" class="info"></a>
+													<label for="card-value">Currency cards</label>
+													<select name="card-value" id="card-value">
+														<option value="rub">RUB</option>
+														<option value="usd">USD</option>
+														<option value="eur">EUR</option>
+													</select>
+												</div>
 											</div>
 										</div>
 
 									</div>
-									<div class="pdetails-ib"></div>
-									<div class="pdetails-office"></div>
-									<div class="pdetails-hand">
-										<p class="comission">Комиссион за услуги курьера 450 руб</p>
-										<div class="control-group">
+									<div class="pdetails-office clearfix active">
+										<div class="pd-office">
+											<div id="maps">
+												<img src="img/maps.png" alt="" />
+											</div>
+											<div class="controls">
+												<label for="office-city" class="required">City</label>
+												<select id="office-city" name="office-city">
+													<option value=""></option>
+												</select>
+											</div>
+											<div class="controls">
+												<label for="office-num" class="required">Office</label>
+												<select id="office-num" name="office-num">
+													<option value=""></option>
+												</select>
+											</div>
+											<span>Здесь появится адрес и более полные контактные данные выбранного офиса</span>
+											<button class="btn type1 control-group" type="submit">Зарезервировать</button>
+										</div>
+
+
+									</div>
+									<div class="pdetails-hand active">
+										<h3 class="comission">Комиссион за услуги курьера 450 руб</h3>
+										<div class="control-group addr clearfix">
 											<div class="controls">
 												<label for="pd-hands-city" class="required">Город</label> <input type="text" id="pd-hands-city"
 													name="pd-hands-city"
 												>
 											</div>
 											<div class="controls">
-												<label for="pd-hands-sector" class="required">Город</label> <input type="text" id="pd-hands-sector"
+												<label for="pd-hands-sector" class="required">Сектор</label> <input type="text" id="pd-hands-sector"
 													name="pd-hands-sector"
 												>
 											</div>
 											<div class="controls">
-												<label for="pd-hands-street" class="required">Город</label> <input type="text" id="pd-hands-street"
+												<label for="pd-hands-street" class="required">Улица</label> <input type="text" id="pd-hands-street"
 													name="pd-hands-street"
 												>
 											</div>
-											<div class="controls">
-												<label for="pd-hands-office" class="required">Город</label> <input type="text" id="pd-hands-office"
+										</div>
+										<div class="control-group clearfix">
+											<div class="controls build">
+												<label for="pd-hands-office" class="required">Дом</label> <input type="text" id="pd-hands-office"
 													name="pd-hands-office"
 												>
 											</div>
-											<div class="controls">
-												<label for="pd-hands-phonenum" class="required">Город</label> <input type="text" id="pd-hands-phonenum"
-													name="pd-hands-phonenum"
+											<div class="controls office">
+												<label for="pd-hands-phonenum" class="required">Квартира\Офис</label> <input type="text"
+													id="pd-hands-phonenum" name="pd-hands-phonenum"
+												>
+											</div>
+											<div class="controls ph-num">
+												<label for="pd-hands-phonenum" class="required">Номер тел. контактного лица</label> <input type="text"
+													id="pd-hands-phonenum" name="pd-hands-phonenum"
 												>
 											</div>
 										</div>
+										<button class="btn type1 control-group" type="submit">Зарезервировать</button>
 									</div>
 								</div>
-								<button class="btn type1" type="submit">Зарезервировать</button>
-							</section>
+							</div>
 						</section>
-					</form>
-				</section>
+					</section>
+					<div class="hidden">
+						<input id="payment-type-select" name="pay-sel" type="text" hidden>
+					</div>
+				</form>
 			</dd>
 			<!-- Hotels -->
 			<dt>Hotels</dt>
@@ -543,16 +650,15 @@
 			<dt>Cars</dt>
 			<dd></dd>
 		</dl>
-		<div class="pay-confirm">
-			<div class="tr-infrom">
-				<div class="">
-					<p class="security">The transmission of information is protected 128-bit SSL certificate signed by Thawte. Site
-						fully meet the safety standards of Visa and MasterCard (PCI compliancy). Reliability is certified HackerSafe by
-						McAfee.</p>
-					<div class="pay-summa">
-						<span>= $ 2412</span>
-						<a href="#pay">Pay</a>
-					</div>
+		<div class="pay-confirm clearfix">
+			<div class="tr-infrom"></div>
+			<div class="tr-check">
+				<p class="security">The transmission of information is protected 128-bit SSL certificate signed by Thawte. Site
+					fully meet the safety standards of Visa and MasterCard (PCI compliancy). Reliability is certified HackerSafe by
+					McAfee.</p>
+				<div class="pay-summa">
+					<span>= $ 2412</span>
+					<a href="#pay">Pay</a>
 				</div>
 			</div>
 		</div>
@@ -634,6 +740,7 @@
 	</footer>
 
 	<script src="js/jquery.js"></script>
+	<script src="js/master.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,105 @@
+@CHARSET "UTF-8";
+
+select,.selectBox {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #666;
+	text-decoration: none;
+	padding: 4px 6px;
+	vertical-align: middle;
+	background:#fff;
+	border: 1px solid #999;
+	border-radius: 2px;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.19); -moz-box-shadow :
+	inset 0 3px 5px rgba( 0, 0, 0, 0.19); box-shadow : inset 0 3px 5px rgba( 0, 0,
+	0, 0.19); -webkit-transition : border linear .2s, box-shadow linear .2s;
+	-moz-transition : border linear .2s, box-shadow linear .2s; -o-transition :
+	border linear .2s, box-shadow linear .2s; transition : border linear .2s,
+	box-shadow linear .2s;
+	z-index: 100;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.19);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.19);
+	-webkit-transition: border linear .2s, box-shadow linear .2s;
+	-moz-transition: border linear .2s, box-shadow linear .2s;
+	-o-transition: border linear .2s, box-shadow linear .2s;
+	transition: border linear .2s, box-shadow linear .2s;
+}
+
+.controls span.selectBox-label{
+	font-size:14px;
+	vertical-align: middle;
+	display:inline;
+}
+
+.error .selectBox, .controls .error .selectBox span.selectBox-label{
+	 color: red;
+}
+
+.error .selectBox{
+	border-color:#ff0000;
+	background:#ffe1e1;
+	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.19);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.19);
+} 	
+
+.selectBox:hover {
+	color: #000;
+	text-decoration: none;
+}
+.error .selectBox:hover {
+  color: red;
+}
+
+.controls span.selectBox-label {
+	padding: 0 15px 0 2px;
+}
+
+.controls span.selectBox-arrow {
+	position: absolute;
+	left: auto;
+	right: 5px;
+	top: 12px;
+	width: 13px;
+	height: 9px;
+	overflow: hidden;
+	cursor: pointer;
+	background: url(i/sprite.png) -90px -180px no-repeat;
+}
+
+.selectBox-dropdown-menu {
+	position: absolute;
+	list-style: none;
+	font-size: 16px;
+	line-height: 20px;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #999999;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.35);
+	z-index: 110;
+	
+}
+
+.selectBox-dropdown-menu li {
+	display: block;
+}
+
+.selectBox-dropdown-menu li a {
+	display: block;
+	padding: 0 2px;
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.selectBox-dropdown-menu li a:hover {
+	text-decoration: none;
+	background: #dad9d9;
+}
+

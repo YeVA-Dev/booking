@@ -157,6 +157,7 @@ header {
 	cursor: pointer;
 	font-size: 10px;
 	vertical-align: middle;
+	*margin-left: .3em;
 }
 
 .setH {
@@ -228,6 +229,7 @@ header {
 	font-size: 12px;
 	margin: 0 0 0 26px;
 	white-space: nowrap;
+	*margin-left: .3em;
 }
 
 .setH .ico {
@@ -247,6 +249,7 @@ header {
 	color: #2479A4;
 	font-weight: 700;
 	border-bottom: 1px dashed #2479A4;
+	*margin-left: .3em;
 }
 
 .curs .ico {
@@ -262,6 +265,7 @@ header {
 	*zoom:1;
 	color: #fff;
 	margin: 0 4px 0 0;
+	*margin-left: .3em;
 }
 
 .head-block a:hover,.head-block a:focus,.head-block-login a:hover,.head-block-login a:focus {
@@ -278,6 +282,7 @@ header {
 	border-left: 1px dotted #fff;
 	margin: 0 4px 0 0;
 	content: "";
+	*margin-left: .3em;
 }
 
 .head-block a:first-child {
@@ -315,6 +320,7 @@ header {
 	margin-left: 2px;
 	vertical-align: middle;
 	content: "";
+	*margin-left: .3em;
 }
 
 .head-block-login a.login:hover:before,.head-block-login a.login:focus:before {
@@ -667,6 +673,7 @@ header .phone i {
 	background: #fff;
 	z-index: 2;
 	color: #666;
+	*margin-left: .3em;
 }
 
 .rec-payment article {
@@ -802,6 +809,7 @@ header .phone i {
 	cursor: pointer;
 	background: url(i/sprite.png) 0 -67px no-repeat;
 	vertical-align: bottom;
+	*margin-left: .3em;
 }
 
 .info:hover,.info:focus {
@@ -913,6 +921,7 @@ li.pass-alert:after {
 	margin-left: 6px;
 	padding-left: 6px;
 	line-height: 16px;
+	*margin-left: .3em;
 }
 
 .book-tickets label {
@@ -995,6 +1004,7 @@ li.pass-alert:after {
 	float: right;
 	background: #fff;
 	padding: 0 8px;
+	*margin-left: .3em;
 }
 
 .book-passengers article {
@@ -1052,6 +1062,7 @@ li.pass-alert:after {
 	display: inline-block;
 	*display:inline;
 	*zoom:1;
+	*margin-left: .3em;
 }
 
 .controls input,.controls select {
@@ -1090,6 +1101,7 @@ input[type="checkbox"]+label,input[type="radio"]+label {
 	vertical-align: middle;
 	color: #444;
 	cursor: pointer;
+	*margin-left: .3em;
 }
 
 .radio-group label {
@@ -1113,6 +1125,7 @@ input[type="checkbox"]+label::before,input[type="radio"]+label::before {
 	background-image: url(i/sprite.png);
 	background-repeat: no-repeat;
 	vertical-align: middle;
+	*margin-left: .3em;
 }
 
 input[type="checkbox"]+label::before {
@@ -1319,6 +1332,7 @@ input[id*="card-number"] {
 	font-weight: bold;
 	position: relative;
 	behavior: url(PIE.htc);
+	*margin-left: .3em;
 }
 
 .payment-type .btn:hover,.payment-type .btn:hover {
@@ -1396,6 +1410,7 @@ input[id*="card-number"] {
 	height: 18px;
 	position: relative;
 	letter-spacing: -0.01em;
+	*margin-left: .3em;
 }
 
 .payment-internet,.payment-cash {
@@ -1419,6 +1434,7 @@ input[id*="card-number"] {
 	vertical-align: middle;
 	padding-left: 18px;
 	background: url(i/sprite.png) -87px 1em no-repeat;
+	*margin-left: .3em;
 }
 
 .payment-internet {
@@ -1478,6 +1494,7 @@ input[id*="card-number"] {
 	*display:inline;
 	*zoom:1;
 	vertical-align: top;
+	*margin-left: .3em;
 }
 
 .back-card {
@@ -1497,6 +1514,7 @@ input[id*="card-number"] {
 	display: inline-block;
 	*display:inline;
 	*zoom:1;
+	*margin-left: .3em;
 }
 
 .payment-details label {
@@ -1539,6 +1557,7 @@ input[id*="card-number"] {
 	*display:inline;
 	*zoom:1;
 	vertical-align: middle;
+	*margin-left: .3em;
 }
 
 .back-card .card-value select,.back-card .card-value a.selectBox {
@@ -1547,6 +1566,7 @@ input[id*="card-number"] {
 	*zoom:1;
 	width: 52px;
 	vertical-align: middle;
+	*margin-left: .3em;
 }
 
 #card-cvv {
@@ -1658,6 +1678,7 @@ input[id*="card-number"] {
 	padding: 0 6px;
 	width: 262px;
 	line-height: 44px;
+	*margin-left: .3em;
 
 }
 
@@ -1695,6 +1716,7 @@ input[id*="card-number"] {
 	background-origin: border-box;
 	border: 1px solid transparent;
 	behavior: url(PIE.htc);
+	*margin-left: .3em;
 }
 
 .pay-summa a:before {
@@ -1869,6 +1891,7 @@ li.easy-check.fin:after {
 	*display:inline;
 	*zoom:1;
 	vertical-align: middle;
+	*margin-left: .3em;
 }
 
 .footer-second h1 {
@@ -1914,6 +1937,7 @@ li.easy-check.fin:after {
 	margin-left: 5px;
 	padding-left: 10px;
 	background: url(i/sprite.png) -80px -380px no-repeat;
+	*margin-left: .3em;
 }
 
 .contacts a {
@@ -1961,6 +1985,7 @@ li.easy-check.fin:after {
 	-moz-box-shadow: 0 -1px 5px rgba(0, 0, 0, .2), 0 1px 5px rgba(255, 255, 255, .8), inset 0 1px 5px rgba(0, 0, 0, .3);
 	box-shadow: 0 -1px 5px rgba(0, 0, 0, .2), 0 1px 5px rgba(255, 255, 255, .8), inset 0 1px 5px rgba(0, 0, 0, .3);
 	behavior: url(PIE.htc);
+	*margin-left: .3em;
 }
 
 .search input {

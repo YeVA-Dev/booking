@@ -30,6 +30,7 @@ select,.selectBox {
 	transition: border linear .2s, box-shadow linear .2s;
 	overflow:hidden;
 	*zoom:1;
+	*margin-left: .3em;
 }
 
 .controls span.selectBox-label{

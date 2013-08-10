@@ -1666,6 +1666,7 @@ legend + .control-group {
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
+	behavior: url(PIE.htc);
   *margin-left: .3em;
 }
 .btn:hover,

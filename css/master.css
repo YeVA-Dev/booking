@@ -1071,7 +1071,7 @@ li.pass-alert:after {
 
 .control-group.line3 select,.control-group.line3 a.selectBox {
 	margin: 0 15px 0 10px;
-	width: 170px;
+	width: 166px;
 }
 
 .control-group.line3 label {
@@ -1080,6 +1080,9 @@ li.pass-alert:after {
 
 .control-group .controls:last-child {
 	margin-right: 0;
+}
+.last{
+	float:right;
 }
 
 .line3 .controls {

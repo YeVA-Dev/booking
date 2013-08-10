@@ -849,7 +849,9 @@ textarea {
 }
 label {
   display: inline-block;
+  *display:inline;
   margin-bottom: 3px;
+  *margin-left: .3em !important;
 }
 select,
 textarea,

@@ -2,6 +2,7 @@
 
 select,.selectBox {
 	display: inline-block;
+	*display:inline !important;
 	position: relative;
 	width: 100%;
 	height: 20px;

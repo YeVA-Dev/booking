@@ -28,12 +28,16 @@ select,.selectBox {
 	-moz-transition: border linear .2s, box-shadow linear .2s;
 	-o-transition: border linear .2s, box-shadow linear .2s;
 	transition: border linear .2s, box-shadow linear .2s;
+	overflow:hidden;
+	*zoom:1;
 }
 
 .controls span.selectBox-label{
 	font-size:14px;
 	vertical-align: middle;
 	display:inline;
+	height:18px;
+	line-height:18px;
 }
 
 .error .selectBox, .controls .error .selectBox span.selectBox-label{

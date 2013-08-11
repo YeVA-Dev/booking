@@ -1063,6 +1063,7 @@ li.pass-alert:after {
 
 .control-group.line3 .controls {
 	min-height: 35px;
+	margin-right:0;
 }
 
 .control-group.line3 select,.control-group.line3 input {

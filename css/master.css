@@ -1031,6 +1031,9 @@ li.pass-alert:after {
 	line-height: 20px;
 	margin: 0 17px;
 }
+.payment-details h3 {
+	margin: 0 22px 10px 21px;
+}
 
 .book-tickets input,.book-tickets select {
 	display: block;
@@ -1292,6 +1295,10 @@ input[id*="card-number"] {
 	behavior: url(PIE.htc);
 }
 
+.payment-type{
+	margin-top:5px;
+}
+
 .payment-details {
 	position: relative;
 }
@@ -1304,14 +1311,17 @@ input[id*="card-number"] {
 	display: block;
 }
 
+.pdetails-visa .control-group, .pdetails-ib .control-group{
+	margin:0 7px 10px 7px;
+}
 .payment-type .btn {
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
-	width: 130px;
-	height: 20px;
-	padding: 10px 0 10px 31px;
-	margin-right: 8px;
+	width: 115px;
+	height: 18px;
+	padding: 10px 0 10px 43px;
+	margin-right: 6px;
 	background-color: #fff;
 	background-image:
 		url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwLjExIiBzdG9wLWNvbG9yPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMikiLz48c3RvcCBvZmZzZXQ9IjAuODkiIHN0b3AtY29sb3I9InJnYmEoMCwgMCwgMCwgMC4yKSIvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNnMSkiIC8+PC9zdmc+);
@@ -1328,10 +1338,10 @@ input[id*="card-number"] {
 	-webkit-box-shadow: inset 0 2px 32px rgba(255, 255, 255, .5), 0 1px 1px rgba(0, 0, 0, .4);
 	-moz-box-shadow: inset 0 2px 32px rgba(255, 255, 255, .5), 0 1px 1px rgba(0, 0, 0, .4);
 	box-shadow: inset 0 2px 32px rgba(255, 255, 255, .5), 0 1px 1px rgba(0, 0, 0, .4);
+	behavior: url(PIE.htc);
 	position: relative;
 	font-weight: bold;
 	position: relative;
-	behavior: url(PIE.htc);
 	*margin-left: .3em;
 }
 
@@ -1362,7 +1372,7 @@ input[id*="card-number"] {
 	content: "";
 	width: 15px;
 	height: 15px;
-	left: 10px;
+	left: 8px;
 	top: 13px;
 	background: url(i/sprite.png) -45px -206px no-repeat;
 }
@@ -1384,19 +1394,19 @@ input[id*="card-number"] {
 }
 
 .payment-type .btn.payment-visa:after {
-	background-position: -34px -68px;
+	background-position: -35px -68px;
 }
 
 .payment-type .btn.payment-ib:after {
-	background-position: -34px -91px;
+	background-position: -35px -92px;
 }
 
 .payment-type .btn.payment-office:after {
-	background-position: -34px -114px;
+	background-position: -35px -114px;
 }
 
 .payment-type .btn.payment-hand:after {
-	background-position: -34px -137px;
+	background-position: -35px -137px;
 }
 
 .payment-type .btn span {
@@ -1409,13 +1419,13 @@ input[id*="card-number"] {
 	line-height: 20px;
 	height: 18px;
 	position: relative;
-	letter-spacing: -0.01em;
+	letter-spacing: -0.1em;
 	*margin-left: .3em;
 }
 
 .payment-internet,.payment-cash {
-	padding: 10px 0;
-	margin: 0 23px;
+	padding: 10px 0 14px 0;
+	margin: 0 22px 0 21px;
 	line-height: 40px;
 }
 
@@ -1425,9 +1435,9 @@ input[id*="card-number"] {
 	*zoom: 1;
 	font-size: 14px;
 	line-height: 1;
-	width: 230px;
+	width: 212px;
 	vertical-align: middle;
-	padding-left: 18px;
+	padding-left: 17px;
 	background: url(i/sprite.png) -87px 1em no-repeat;
 	*margin-left: .3em;
 }
@@ -1452,24 +1462,6 @@ input[id*="card-number"] {
 	min-height: 0;
 }
 
-.control-group.addr .controls {
-	width: 182px;
-}
-
-.control-group .build {
-	width: 58px;
-}
-
-.control-group .office {
-	width: 106px;
-}
-
-.control-group .ph-num {
-	width: 225px;
-}
-.control-group .ph-num.last {
-	float:left;
-}
 .pdetails-visa .type1 {
 	float: right;
 }
@@ -1478,13 +1470,14 @@ input[id*="card-number"] {
 	display: block;
 	float: none;
 	margin-bottom: 9px;
+	margin-right:0;
 	padding: 0;
 }
 
 .back-card,.face-card {
-	width: 285px;
-	height: 138px;
-	padding: 50px 9px 0 9px;
+	width: 292px;
+	height: 137px;
+	padding: 55px 9px 0 9px;
 	background: url(i/card_bg.png) 0 0 no-repeat;
 	display: inline-block;
 	*display: inline;
@@ -1508,11 +1501,16 @@ input[id*="card-number"] {
 .face-card input {
 	width: 51px;
 	display: inline-block;
+	margin-right:10px;
+	float:left;
 	*display: inline;
 	*zoom: 1;
 	*margin-left: .3em;
 }
-
+.face-card input.last{
+	float:left;
+	margin-right:0;
+}
 .payment-details label {
 	font-size: 14px;
 }
@@ -1525,26 +1523,30 @@ input[id*="card-number"] {
 	vertical-align: top;
 }
 
-.pdetails-hand  label {
-	font-size: 12px;
-}
-
 .card-valid label {
-	width: 46px;
+	float:left;
+	width: 48px;
 	margin-bottom: 0;
 	vertical-align: middle;
 }
-
+.card-valid input {
+	width:76px;
+}
 .card-holder input {
-	width: 261px;
+	width: 276px;
+	margin:0;
 }
 
 .back-card .card-cvv {
 	margin-left: 217px;
 }
+.back-card .card-cvv label,.back-card .card-cvv input{
+	float:right;
+}
 
 .back-card .card-value {
 	margin-left: 115px;
+	text-align: right;
 }
 
 .back-card .card-value label {
@@ -1563,6 +1565,7 @@ input[id*="card-number"] {
 	width: 52px;
 	vertical-align: middle;
 	*margin-left: .3em;
+	text-align: left;
 }
 
 #card-cvv {
@@ -1570,21 +1573,65 @@ input[id*="card-number"] {
 }
 
 [class^="pdetails-"] {
-	padding: 10px 0;
+	padding: 7px 0;
 }
 
-.pdetails-office {
-	padding: 10px 17px;
+.pdetails-office p{
+	margin:0;
+	display:block;
+	margin-bottom:20px;
+	
 }
-
-.pd-office .controls {
-	width: 232px;
+.pdetails-office .control-group{
+	width:240px;
+	float:left;
 }
-
+.pdetails-office .selectBox{
+	width:174px;
+}
+.pdetails-office .controls{
+	margin-bottom:10px;
+}
+.pdetails-office .controls label,.pdetails .controls .selectBox{
+	display:block;
+	float:none;
+}
 
 #maps {
 	float: right;
-	padding: 0 0 15px 55px;
+	padding: 0 17px 15px 0px;
+}
+
+.pdetails-hand h4 {
+	font-size:15px;
+	margin:0 39px 10px 22px;
+}
+
+.pdetails-hand label {
+	font-size: 12px;
+}
+
+.pdetails-hand .controls{
+	padding:0;
+}
+.pdetails-hand .controls.last{
+	float:left;
+}
+
+.control-group.addr .controls input{
+	width: 176px;
+}
+
+.control-group .build input{
+	width: 56px;
+}
+
+.control-group .office input{
+	width: 96px;
+}
+
+.control-group .ph-num input{
+	width: 216px;
 }
 
 .pay-confirm {

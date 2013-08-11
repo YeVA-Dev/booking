@@ -20,7 +20,6 @@
 <link href='css/bootstrap.css' rel='stylesheet'>
 <link href='css/select.css' rel='stylesheet'>
 <link href='css/master.css' rel='stylesheet'>
-
 <!--[if lt IE 9]>
 <style>
 input[type="checkbox"],input[type="radio"] {
@@ -160,7 +159,7 @@ input[type="checkbox"],input[type="radio"] {
 			</div>
 			<div class="nav_wrapp">
 				<ul class="nav-tabs">
-					<li  id="tabs-flight" class="tab active"><a href="#flights" data-toggle="tab">
+					<li id="tabs-flight" class="tab active"><a href="#flights" data-toggle="tab">
 							<span>Flight</span>
 						</a></li>
 					<li id="tabs-hotels" class="tab"><a href="#hotels" data-toggle="tab">
@@ -619,25 +618,25 @@ input[type="checkbox"],input[type="radio"] {
 											<h3 class="comission">Комиссион за обслуживание банковской карты составит 450 руб</h3>
 											<div class="control-group">
 												<div class="face-card">
-													<div class="controls card-num">
+													<div class="controls card-num clearfix">
 														<label for="card-num0">Card number</label> <input type="text" id="card-num0" name="card-num[0]"> <input
 															type="text" name="card-num[1]"
-														> <input type="text" name="card-num[2]"> <input type="text" name="card-num[3]">
+														> <input type="text" name="card-num[2]"> <input class="last" type="text" name="card-num[3]">
 													</div>
-													<div class="controls card-valid">
+													<div class="controls card-valid clearfix">
 														<label for="card-valid">Vaild Thru</label> <input type="text" id="card-valid" name="card-valid"
 															placeholder="MM/YY"
 														>
 													</div>
-													<div class="controls card-holder">
+													<div class="controls card-holder clearfix">
 														<input type="text" name="card-holder" placeholder="CARD HOLDER">
 													</div>
 												</div>
 												<div class="back-card">
-													<div class="controls card-cvv">
+													<div class="controls card-cvv clearfix">
 														<label for="card-cvv">CVV/CVC</label> <input type="text" id="card-cvv" name="card-cvv">
 													</div>
-													<div class="controls card-value">
+													<div class="controls card-value clearfix">
 														<a href="#" class="info"></a>
 														<label for="card-value">Currency cards</label>
 														<select name="card-value" id="card-value">
@@ -656,12 +655,12 @@ input[type="checkbox"],input[type="radio"] {
 										<div id="pdetails-ib" class="pdetails-ib">
 											<div class="control-group">
 												<div class="face-card">
-													<div class="controls card-num">
+													<div class="controls card-num clearfix">
 														<label for="card-num1">Card number</label> <input type="text" id="card-num1" name="card-num[0]"> <input
 															type="text" name="card-num[1]"
-														> <input type="text" name="card-num[2]"> <input type="text" name="card-num[3]">
+														> <input type="text" name="card-num[2]"> <input class="last" type="text" name="card-num[3]">
 													</div>
-													<div class="controls card-valid">
+													<div class="controls card-valid clearfix">
 														<label for="card-valid-ib">Vaild Thru</label> <input type="text" id="card-valid-ib" name="card-valid"
 															placeholder="MM/YY"
 														>
@@ -671,7 +670,7 @@ input[type="checkbox"],input[type="radio"] {
 													</div>
 												</div>
 												<div class="back-card">
-													<div class="controls card-cvv">
+													<div class="controls card-cvv clearfix">
 														<label for="card-cvv-ib">CVV/CVC</label> <input type="text" id="card-cvv-ib" name="card-cvv">
 													</div>
 													<div class="controls card-value">
@@ -688,10 +687,7 @@ input[type="checkbox"],input[type="radio"] {
 
 										</div>
 										<div id="pdetails-office" class="pdetails-office clearfix">
-											<div class="pd-office">
-												<div id="maps">
-													<img src="img/maps.png" alt="" />
-												</div>
+											<div class="control-group">
 												<div class="controls">
 													<label for="office-city" class="required">City</label>
 													<select id="office-city" name="office-city">
@@ -707,11 +703,15 @@ input[type="checkbox"],input[type="radio"] {
 												<p>Здесь появится адрес и более полные контактные данные выбранного офиса</p>
 												<button class="btn type1" type="submit">Зарезервировать</button>
 											</div>
+											<div id="maps">
+												<img src="img/maps.png" alt="" />
+											</div>
 
 
 										</div>
 										<div id="pdetails-hand" class="pdetails-hand">
 											<h3 class="comission">Комиссион за услуги курьера 450 руб</h3>
+											<h4>Доставьте мне заказ по адресу:</h4>
 											<div class="control-group addr clearfix">
 												<div class="controls">
 													<label for="pd-hands-city" class="required">Город</label> <input type="text" id="pd-hands-city"

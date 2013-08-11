@@ -5,30 +5,26 @@ select,.selectBox {
 	*display:inline !important;
 	position: relative;
 	width: 100%;
-	height: 20px;
-	line-height: 20px;
+	height: 28px;
+	line-height: 24px;
 	font-size: 14px;
 	color: #666;
 	text-decoration: none;
-	padding: 4px 6px;
+	padding: 0 6px;
 	vertical-align: middle;
 	background:#fff;
 	border: 1px solid #999;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
 	border-radius: 2px;
-	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.19); -moz-box-shadow :
-	inset 0 3px 5px rgba( 0, 0, 0, 0.19); box-shadow : inset 0 3px 5px rgba( 0, 0,
-	0, 0.19); -webkit-transition : border linear .2s, box-shadow linear .2s;
-	-moz-transition : border linear .2s, box-shadow linear .2s; -o-transition :
-	border linear .2s, box-shadow linear .2s; transition : border linear .2s,
-	box-shadow linear .2s;
-	z-index: 100;
 	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.19);
-	-moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.19);
-	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.19);
-	-webkit-transition: border linear .2s, box-shadow linear .2s;
-	-moz-transition: border linear .2s, box-shadow linear .2s;
-	-o-transition: border linear .2s, box-shadow linear .2s;
-	transition: border linear .2s, box-shadow linear .2s;
+	-moz-box-shadow : inset 0 3px 5px rgba( 0, 0, 0, 0.19);
+	box-shadow : inset 0 3px 5px rgba( 0, 0, 0, 0.19);
+	-webkit-transition : border linear .2s, box-shadow linear .2s;
+	-moz-transition : border linear .2s, box-shadow linear .2s;
+	-o-transition : border linear .2s, box-shadow linear .2s;
+	transition : border linear .2s, box-shadow linear .2s;
+	z-index: 100;
 	overflow:hidden;
 	*zoom:1;
 	*margin-left: .3em !important;
@@ -37,9 +33,8 @@ select,.selectBox {
 .controls span.selectBox-label{
 	font-size:14px;
 	vertical-align: middle;
-	display:inline;
-	height:18px;
-	line-height:18px;
+	display:inline-block;
+	line-height:1;
 }
 
 .error .selectBox, .controls .error .selectBox span.selectBox-label{
@@ -54,11 +49,11 @@ select,.selectBox {
 	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.19);
 } 	
 
-.selectBox:hover {
+.selectBox:hover,.selectBox:focus {
 	color: #000;
 	text-decoration: none;
 }
-.error .selectBox:hover {
+.error .selectBox:hover,.error .selectBox:focus {
   color: red;
 }
 

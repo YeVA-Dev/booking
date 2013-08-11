@@ -20,6 +20,19 @@
 <link href='css/bootstrap.css' rel='stylesheet'>
 <link href='css/select.css' rel='stylesheet'>
 <link href='css/master.css' rel='stylesheet'>
+
+<!--[if lt IE 9]>
+<style>
+input[type="checkbox"],input[type="radio"] {
+	display:inline-block!important;
+	width:15px!important;
+	margin:0!important;
+	vertical-align: middle!important;
+}
+</style>
+<![endif]-->
+
+
 </head>
 <body>
 
@@ -134,15 +147,26 @@
 		<img class="logo-img" src="img/logo.png" alt="">
 		<div class="tabs">
 
+			<div class="set">
+				<div class="tc h"></div>
+				<div class="tl y"></div>
+				<div class="tr y"></div>
+				<div class="rc v"></div>
+				<div class="rb y"></div>
+				<div class="bc h"></div>
+				<div class="bl y"></div>
+				<div class="lc v"></div>
+				<div class="ccc"></div>
+			</div>
 			<div class="nav_wrapp">
 				<ul class="nav-tabs">
-					<li class="tab active"><a id="tabs-flight" href="#flights" data-toggle="tab">
+					<li  id="tabs-flight" class="tab active"><a href="#flights" data-toggle="tab">
 							<span>Flight</span>
 						</a></li>
-					<li class="tab"><a id="tabs-hotels" href="#hotels" data-toggle="tab">
+					<li id="tabs-hotels" class="tab"><a href="#hotels" data-toggle="tab">
 							<span>Hotels</span>
 						</a></li>
-					<li class="tab"><a id="tabs-cars" href="#cars" data-toggle="tab">
+					<li id="tabs-cars" class="tab"><a href="#cars" data-toggle="tab">
 							<span>Cars</span>
 						</a></li>
 				</ul>
@@ -336,7 +360,7 @@
 											<a href="#" class="info"></a>
 										</span>
 									</h2>
-									<article class="clearfix bottom-shadow">
+									<article class="bottom-shadow">
 										<h3>Adult 1</h3>
 										<div class="control-group clearfix">
 											<div class="controls error sex">
@@ -410,7 +434,7 @@
 											</div>
 										</div>
 									</article>
-									<article class="clearfix">
+									<article>
 										<h3>Adult 2</h3>
 										<div class="control-group clearfix">
 											<div class="controls sex">
@@ -680,8 +704,8 @@
 														<option value=""></option>
 													</select>
 												</div>
-												<span>Здесь появится адрес и более полные контактные данные выбранного офиса</span>
-												<button class="btn type1 control-group" type="submit">Зарезервировать</button>
+												<p>Здесь появится адрес и более полные контактные данные выбранного офиса</p>
+												<button class="btn type1" type="submit">Зарезервировать</button>
 											</div>
 
 
@@ -712,8 +736,8 @@
 													>
 												</div>
 												<div class="controls office">
-													<label for="pd-hands-office" class="required">Квартира\Офис</label> <input type="text"
-														id="pd-hands-office" name="pd-hands-office"
+													<label for="pd-hands-office" class="required">Квартира\Офис</label> <input type="text" id="pd-hands-office"
+														name="pd-hands-office"
 													>
 												</div>
 												<div class="controls ph-num">
@@ -722,7 +746,9 @@
 													>
 												</div>
 											</div>
-											<button class="btn type1 control-group" type="submit">Зарезервировать</button>
+											<div class="control-group">
+												<button class="btn type1" type="submit">Зарезервировать</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -739,6 +765,7 @@
 				<div id="cars" class="tabs-item clearfix">Cars</div>
 			</div>
 		</div>
+
 		<div class="pay-confirm clearfix">
 			<div class="tr-infrom"></div>
 			<div class="tr-check">

@@ -23,7 +23,7 @@
 		$('#' + $(this).data("detail")).addClass('active');
 	})
 
-	$(".control-group .controls:last-child, .easy-list li:last-child").addClass("last")
+	/*$(".control-group .controls:last-child, .easy-list li:last-child").addClass("last")*/
 
 	jQuery.support.placeholder = false;
 	var test = document.createElement('input');

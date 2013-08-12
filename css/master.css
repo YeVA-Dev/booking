@@ -363,15 +363,16 @@ header .phone i {
 .central {
 	background-color:#0088cc;
 	background-image: url(i/bg-content.png),
-		url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNDBiZmZmIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDA4OGNjIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
-	background-image: url(i/bg-content.png), -webkit-linear-gradient(top, bottom, #40bfff 0%, #0088cc 100%);
-	background-image: url(i/bg-content.png), -moz-linear-gradient(top, bottom, #40bfff 0%, #0088cc 100%);
-	background-image: url(i/bg-content.png), -o-linear-gradient(top, #40bfff 0%, #0088cc 100%);
-	background-image: url(i/bg-content.png), -ms-linear-gradient(top, #40bfff 0%, #0088cc 100%);
-	background-image: url(i/bg-content.png), linear-gradient(to bottom, #40bfff 0%, #0088cc 100%);
-	-webkit-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .4), inset 0 0 40px #fff, 0 1px 5px rgba(0, 0, 0, .3);
-	-moz-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .4), inset 0 0 40px #fff, 0 1px 5px rgba(0, 0, 0, .3);
-	box-shadow: inset 0 2px 0 rgba(255, 255, 255, .4), inset 0 0 40px #fff, 0 1px 5px rgba(0, 0, 0, .3);
+		url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNDBiZmZmIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDA1ODg1Ii8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
+  background-image: url(i/bg-content.png), -webkit-gradient(linear, center top, center bottom, color-stop(0%, #40bfff), color-stop(100%, #005885));
+	background-image: url(i/bg-content.png), -webkit-linear-gradient(top, #40bfff 0%, #005885 100%);
+	background-image: url(i/bg-content.png), -moz-linear-gradient(top, #40bfff 0%, #005885 100%);
+	background-image: url(i/bg-content.png), -ms-linear-gradient(top, #40bfff 0%, #005885 100%);
+	background-image: url(i/bg-content.png), -o-linear-gradient(top, #40bfff 0%, #005885 100%);
+	background-image: url(i/bg-content.png), linear-gradient(to bottom, #40bfff 0%, #005885 100%);;
+	-webkit-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .4), inset 0 0 40px rgba(255, 255, 255, .5), 0 1px 4px rgba(0, 0, 0, .3);
+	-moz-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .4), inset 0 0 40px rgba(255, 255, 255, .5), 0 1px 4px rgba(0, 0, 0, .3);
+	box-shadow: inset 0 2px 0 rgba(255, 255, 255, .4), inset 0 0 40px rgba(255, 255, 255, .5), 0 1px 4px rgba(0, 0, 0, .3);
 	-webkit-border-radius: 17px;
 	-moz-border-radius: 17px;
 	border-radius: 17px;
@@ -380,6 +381,7 @@ header .phone i {
 	box-sizing: border-box;
 	margin-bottom: 20px;
 	overflow: hidden;
+	*zoom:1;
 }
 
 .logo-img {
@@ -461,56 +463,61 @@ header .phone i {
 }
 
 .nav-tabs a {
+	display:inline-block;
+	*display:inline;
 	vertical-align: top;
 	padding-left: 26px;
+	line-height: 24px;
 	color: #FACA25;
 	background: url(i/mtbico.png) 0 0 no-repeat;
 	text-decoration: underline;
+	*zoom:1;
 }
 
 .nav-tabs .active a:hover,.nav-tabs .active a:focus,.nav-tabs .active a {
 	text-decoration: none;
+	cursor: default;
 }
 
 #tabs-flight a{
-	background-position: 0 -43px;
+	background-position: 0 -63px;
 }
 
 #tabs-flight a:hover,#tabs-flight a:focus {
-	background-position: 0 -1px;
+	background-position: 0 -3px;
 	color: #fff;
 }
 
 #tabs-flight.active a,#tabs-flight.active a:hover,#tabs-flight.active a:focus {
-	background-position: 0 -22px;
+	background-position: 0 -33px;
 	color: black;
 }
 
 #tabs-hotels a{
-	background-position: 0 -106px;
+	background-position: 0 -153px;
 }
 
 #tabs-hotels a:hover,#tabs-hotels a:focus {
-	background-position: 0 -64px;
+	background-position: 0 -93px;
 	color: #fff;
 }
 
 #tabs-hotels.active a,#tabs-hotels.active a:hover,#tabs-hotels.active a:focus {
-	background-position: 0 -85px;
+	background-position: 0 -123px;
 	color: black;
 }
 
 #tabs-cars a{
-	background-position: 0 -170px;
+	background-position: 0 -243px;
 }
 
 #tabs-cars a:hover,#tabs-cars a:focus {
-	background-position: 0 -127px;
+	background-position: 0 -183px;
 	color: #fff;
 }
 
 #tabs-cars.active a,#tabs-cars.active a:hover,#tabs-cars.active a:focus {
-	background-position: 0 -149px;
+	background-position: 0 -213px;
 	color: black;
 }
 
@@ -1022,7 +1029,6 @@ li.pass-alert:after {
 
 .book-tickets .control-group {
 	margin-left: 17px;
-	margin-right: 17px;
 }
 
 .book-passengers h3,.payment-details h3 {
@@ -1046,24 +1052,85 @@ li.pass-alert:after {
 .controls {
 	display: block;
 	float: left;
-	margin-right: 10px;
-	padding-right: 14px;
+	padding-right: 10px;
 }
 
 .controls>span {
 	display: block;
 	font-size: 12px;
 	line-height: 1.1;
-	width: 100%;
+}
+
+.controls[class*="name-"] {
+  width: 181px;
+}
+.controls[class*="name-"] input{
+  width:167px;
+}
+
+.controls[class*="date-"] {
+  width: 121px;
+  padding:0;
+}
+.controls[class*="date-"] input{
+	  width: 107px;
+}
+
+.controls.sex{
+	width:90px;
+}
+.controls.citizen {
+  width: 251px;
+}
+.controls.citizen .selectBox{
+  width: 237px;
+}
+.controls.citizen select.selectBox{
+  width: 251px;
+}
+.controls.doc-number {
+  width: 211px;
+  
+}
+.controls.doc-number input{
+  width: 197px;
 }
 
 .controls label span {
 	display: inline;
 }
 
-.control-group.line3 .controls {
-	min-height: 35px;
-	margin-right:0;
+.controls.bonus-card{
+	font-size:0;
+	width:318px;
+}
+.controls.bonus-card label{
+	vertical-align: middle;
+}
+.controls.bonus-card .selectBox {
+  width: 167px;
+}
+.controls.bonus-card select.selectBox{
+  width: 181px;
+}
+
+.controls.card-number{
+	width:284px;
+	padding:0;
+	font-size:0;
+}
+
+.controls.card-number label{
+	width:93px;
+	vertical-align: middle;
+}	
+
+.controls.card-number input {
+  width: 167px;
+}
+
+.bonus-label{
+	width:101px;
 }
 
 .control-group.line3 select,.control-group.line3 input {
@@ -1073,26 +1140,8 @@ li.pass-alert:after {
 	*margin-left: .3em;
 }
 
-.controls input,.controls select {
-	width: 100%;
-}
-
-.control-group.line3 select,.control-group.line3 a.selectBox {
-	margin: 0 15px 0 10px;
-	width: 166px;
-}
-
-.control-group.line3 label {
-	margin-right: 15px;
-}
-
 .last {
 	margin-right: 0;
-	float: right;
-}
-
-.line3 .controls {
-	padding-right: 0;
 }
 
 input[type="checkbox"],input[type="radio"] {
@@ -1109,7 +1158,6 @@ input[type="checkbox"]+label,input[type="radio"]+label {
 	cursor: pointer;
 	vertical-align: middle;
 	color: #444;
-	cursor: pointer;
 	*margin-left: .3em;
 }
 
@@ -1173,26 +1221,6 @@ input[type="radio"]:checked+label::before {
 	padding: 5px 0;
 }
 
-[class*="name-"] {
-	width: 164px;
-}
-
-input[id*="card-number"] {
-	width: 166px;
-}
-
-[class*="date-"] {
-	width: 104px;
-}
-
-[class*="doc-number"] {
-	width: 196px;
-}
-
-[class*="citizen"] {
-	width: 246px;
-}
-
 .insurace-policy {
 	
 }
@@ -1202,6 +1230,15 @@ input[id*="card-number"] {
 	width: 485px;
 	margin-left: 17px;
 	margin-bottom:10px;
+	*zoom:1;
+}
+.insurance-price {
+  float: left;
+  width:140px;
+	margin: 0;
+  font-size: 13px;
+  line-height: 19px;
+  *zoom:1;
 }
 
 .insurance-description ul {
@@ -1254,15 +1291,6 @@ input[id*="card-number"] {
 	line-height: 18px;
 }
 
-.insurance-price {
-	margin: 0 20px;
-}
-
-.insurance-price {
-	font-size: 13px;
-	line-height: 19px;
-}
-
 .insurance-price span,.insurance-price .price-value,.insurance-price a {
 	display: block;
 }
@@ -1283,9 +1311,11 @@ input[id*="card-number"] {
 }
 
 .rec-contacts .controls {
-	width: 180px;
+	width: 196px;
 }
-
+.rec-contacts .controls input{
+	width:182px;
+}
 .payment {
 	background: #fae7d4;
 	padding-bottom: 15px;
@@ -1476,9 +1506,9 @@ input[id*="card-number"] {
 }
 
 .back-card,.face-card {
-	width: 292px;
+	width: 303px;
 	height: 137px;
-	padding: 55px 9px 0 9px;
+	padding: 55px 0 0 9px;
 	background: url(i/card_bg.png) 0 0 no-repeat;
 	display: inline-block;
 	*display: inline;
@@ -1489,6 +1519,8 @@ input[id*="card-number"] {
 
 .back-card {
 	background-position: 0 -193px;
+  padding-right: 9px;
+  padding-left: 0;
 }
 
 .face-card {
@@ -1501,12 +1533,10 @@ input[id*="card-number"] {
 
 .face-card input {
 	width: 51px;
-	display: inline-block;
+	display: block;
 	margin-right:10px;
 	float:left;
-	*display: inline;
 	*zoom: 1;
-	*margin-left: .3em;
 }
 .face-card input.last{
 	float:left;

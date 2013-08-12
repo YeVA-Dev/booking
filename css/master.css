@@ -462,7 +462,8 @@ header .phone i {
 }
 
 .nav-tabs a {
-	display:block;
+	display:inline-block;
+	*display:inline;
 	vertical-align: top;
 	padding-left: 26px;
 	line-height: 24px;
@@ -474,6 +475,7 @@ header .phone i {
 
 .nav-tabs .active a:hover,.nav-tabs .active a:focus,.nav-tabs .active a {
 	text-decoration: none;
+	cursor: default;
 }
 
 #tabs-flight a{

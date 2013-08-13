@@ -634,7 +634,8 @@ input[type="checkbox"],input[type="radio"] {
 												</div>
 												<div class="back-card">
 													<div class="controls card-cvv clearfix">
-														<label for="card-cvv">CVV/CVC</label> <input type="text" id="card-cvv" name="card-cvv">
+														<label for="card-cvv-visa">CVV/CVC</label>
+                            <input type="text" id="card-cvv-visa" name="card-cvv">
 													</div>
 													<div class="controls card-value clearfix">
 														<a href="#" class="info"></a>
@@ -652,7 +653,7 @@ input[type="checkbox"],input[type="radio"] {
 												<button class="btn type1" type="submit">Оплатить</button>
 											</p>
 										</div>
-										<div id="pdetails-ib" class="pdetails-ib">
+										<div id="pdetails-ib" class="pdetails-ib active">
 											<div class="control-group">
 												<div class="face-card">
 													<div class="controls card-num clearfix">
@@ -671,7 +672,8 @@ input[type="checkbox"],input[type="radio"] {
 												</div>
 												<div class="back-card">
 													<div class="controls card-cvv clearfix">
-														<label for="card-cvv-ib">CVV/CVC</label> <input type="text" id="card-cvv-ib" name="card-cvv">
+														<label for="card-cvv-ib">CVV/CVC</label>
+                            <input type="text" id="card-cvv-ib" name="card-cvv">
 													</div>
 													<div class="controls card-value">
 														<a href="#" class="info"></a>
@@ -686,7 +688,7 @@ input[type="checkbox"],input[type="radio"] {
 											</div>
 
 										</div>
-										<div id="pdetails-office" class="pdetails-office clearfix">
+										<div id="pdetails-office" class="pdetails-office clearfix active">
 											<div class="control-group">
 												<div class="controls">
 													<label for="office-city" class="required">City</label>
@@ -700,16 +702,18 @@ input[type="checkbox"],input[type="radio"] {
 														<option value=""></option>
 													</select>
 												</div>
+                      <div class="controls">
 												<p>Здесь появится адрес и более полные контактные данные выбранного офиса</p>
 												<button class="btn type1" type="submit">Зарезервировать</button>
 											</div>
+                      </div>
 											<div id="maps">
 												<img src="img/maps.png" alt="" />
 											</div>
 
 
 										</div>
-										<div id="pdetails-hand" class="pdetails-hand">
+										<div id="pdetails-hand" class="pdetails-hand active">
 											<h3 class="comission">Комиссион за услуги курьера 450 руб</h3>
 											<h4>Доставьте мне заказ по адресу:</h4>
 											<div class="control-group addr clearfix">

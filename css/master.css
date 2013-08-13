@@ -362,17 +362,18 @@ header .phone i {
 
 .central {
 	background-color:#0088cc;
-	background-image: url(i/bg-content.png),url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMzdhNmRlIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDI2Nzk5Ii8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
-	background-image: url(i/bg-content.png),-webkit-gradient(linear, center top, center bottom, color-stop(0%, #37a6de), color-stop(100%, #026799));
-	background-image: url(i/bg-content.png),-webkit-linear-gradient(top, #37a6de 0%, #026799 100%);
-	background-image: url(i/bg-content.png),-moz-linear-gradient(top, #37a6de 0%, #026799 100%);
-	background-image: url(i/bg-content.png),-ms-linear-gradient(top, #37a6de 0%, #026799 100%);
-	background-image: url(i/bg-content.png),-o-linear-gradient(top, #37a6de 0%, #026799 100%);
-	background-image: url(i/bg-content.png),linear-gradient(to bottom, #37a6de 0%, #026799 100%);
-
-	-webkit-box-shadow: inset 0 2px 0 #50cfe5, inset 0 0 40px rgba(255, 255, 255, .75), 0 1px 4px rgba(0, 0, 0, .3);
-	-moz-box-shadow: inset 0 2px 0 #50cfe5, inset 0 0 40px rgba(255, 255, 255, .75), 0 1px 4px rgba(0, 0, 0, .3);
-	box-shadow: inset 0 2px 0 #50cfe5, inset 0 0 40px rgba(255, 255, 255, .75), 0 1px 4px rgba(0, 0, 0, .3);
+	background-image: url(i/bg-content.png),
+		url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjNDBiZmZmIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMDA1ODg1Ii8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cxKSIgLz48L3N2Zz4=);
+  background-image: url(i/bg-content.png), -webkit-gradient(linear, center top, center bottom, color-stop(0%, #40bfff), color-stop(100%, #005885));
+	background-image: url(i/bg-content.png), -webkit-linear-gradient(top, #40bfff 0%, #005885 100%);
+	background-image: url(i/bg-content.png), -moz-linear-gradient(top, #40bfff 0%, #005885 100%);
+	background-image: url(i/bg-content.png), -ms-linear-gradient(top, #40bfff 0%, #005885 100%);
+	background-image: url(i/bg-content.png), -o-linear-gradient(top, #40bfff 0%, #005885 100%);
+	background-image: url(i/bg-content.png), linear-gradient(to bottom, #40bfff 0%, #005885 100%);
+  -pie-background: linear-gradient(to bottom, #40bfff 0%, #005885 100%);
+	-webkit-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .4), inset 0 0 40px rgba(255, 255, 255, .5), 0 1px 4px rgba(0, 0, 0, .3);
+	-moz-box-shadow: inset 0 2px 0 rgba(255, 255, 255, .4), inset 0 0 40px rgba(255, 255, 255, .5), 0 1px 4px rgba(0, 0, 0, .3);
+	box-shadow: inset 0 2px 0 rgba(255, 255, 255, .4), inset 0 0 40px rgba(255, 255, 255, .5), 0 1px 4px rgba(0, 0, 0, .3);
 	-webkit-border-radius: 17px;
 	-moz-border-radius: 17px;
 	border-radius: 17px;
@@ -936,6 +937,11 @@ li.pass-alert:after {
 	*margin-left: .3em;
 }
 
+.book-tickets input, .selectBox{
+	box-sizing:border-box;
+	height:30px;
+}
+
 .book-tickets label {
 	text-transform: uppercase;
 	font-weight: bold;
@@ -1052,48 +1058,45 @@ li.pass-alert:after {
 .controls {
 	display: block;
 	float: left;
-	padding-right: 10px;
+	margin-right: 10px;
 }
 
 .controls>span {
 	display: block;
 	font-size: 12px;
-	line-height: 1.1;
+	line-height: 1;
 }
 
-.controls[class*="name-"] {
-  width: 181px;
-}
-.controls[class*="name-"] input{
-  width:167px;
+.controls input{
+	width:100%;
 }
 
-.controls[class*="date-"] {
+.controls[class*="name-"]{
+  width:181px;
+}
+
+.controls[class*="date-"]{
   width: 121px;
-  padding:0;
-}
-.controls[class*="date-"] input{
-	  width: 107px;
 }
 
 .controls.sex{
 	width:90px;
 }
-.controls.citizen {
+
+.controls.citizen label{
+  display:block;
+}
+
+.controls.citizen{
   width: 251px;
 }
-.controls.citizen .selectBox{
-  width: 237px;
+
+.controls .selectBox{
+  width:100%;
 }
-.controls.citizen select.selectBox{
-  width: 251px;
-}
-.controls.doc-number {
+
+.controls.doc-number{
   width: 211px;
-  
-}
-.controls.doc-number input{
-  width: 197px;
 }
 
 .controls label span {
@@ -1102,20 +1105,17 @@ li.pass-alert:after {
 
 .controls.bonus-card{
 	font-size:0;
-	width:318px;
+	width:320px;
 }
 .controls.bonus-card label{
 	vertical-align: middle;
 }
-.controls.bonus-card .selectBox {
-  width: 167px;
-}
-.controls.bonus-card select.selectBox{
-  width: 181px;
+
+ .controls.bonus-card .selectBox {
+  width: 180px;
 }
 
 .controls.card-number{
-	width:284px;
 	padding:0;
 	font-size:0;
 }
@@ -1126,7 +1126,7 @@ li.pass-alert:after {
 }	
 
 .controls.card-number input {
-  width: 167px;
+  width: 180px;
 }
 
 .bonus-label{
@@ -1221,10 +1221,6 @@ input[type="radio"]:checked+label::before {
 	padding: 5px 0;
 }
 
-.insurace-policy {
-	
-}
-
 .insurance-description {
 	float: left;
 	width: 485px;
@@ -1310,12 +1306,10 @@ input[type="radio"]:checked+label::before {
 	padding-right: 60px;
 }
 
-.rec-contacts .controls {
-	width: 196px;
+.rec-contacts .controls{
+	width: 191px;
 }
-.rec-contacts .controls input{
-	width:182px;
-}
+
 .payment {
 	background: #fae7d4;
 	padding-bottom: 15px;
@@ -1346,9 +1340,8 @@ input[type="radio"]:checked+label::before {
 	margin:0 7px 10px 7px;
 }
 .payment-type .btn {
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	display: block;
+	float:left;
 	width: 115px;
 	height: 18px;
 	padding: 10px 0 10px 43px;
@@ -1461,16 +1454,32 @@ input[type="radio"]:checked+label::before {
 }
 
 .payment-type b {
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
+	display: block;
+	float:left;
 	font-size: 14px;
-	line-height: 1;
-	width: 212px;
+	line-height: 40px;
+	height: 40px;
+	width: 230px;
 	vertical-align: middle;
-	padding-left: 17px;
-	background: url(i/sprite.png) -87px 1em no-repeat;
-	*margin-left: .3em;
+	overflow:hidden;
+	word-wrap:normal;
+	*zoom:1;
+}
+.payment-type b:before {
+	display:inline-block;
+	height:15px;
+	width:17px;
+	content:"";
+  vertical-align: middle;
+  background: url(i/sprite.png) -87px 1em no-repeat;
+}
+
+.payment-internet b:before {
+  background-position: -87px 0px;
+}
+
+.payment-cash b:before {
+  background-position: -87px -15px;
 }
 
 .payment-internet {
@@ -1481,28 +1490,8 @@ input[type="radio"]:checked+label::before {
 	border-top: 1px solid #999;
 }
 
-.payment-internet b {
-	background-position: -87px 0px;
-}
-
-.payment-cash b {
-	background-position: -87px -14px;
-}
-
-.payment-details .controls {
-	min-height: 0;
-}
-
 .pdetails-visa .type1 {
 	float: right;
-}
-
-.pdetails-visa .controls,.pdetails-ib .controls {
-	display: block;
-	float: none;
-	margin-bottom: 9px;
-	margin-right:0;
-	padding: 0;
 }
 
 .back-card,.face-card {
@@ -1527,21 +1516,27 @@ input[type="radio"]:checked+label::before {
 	
 }
 
+.face-card .controls,.back-card .controls {
+  float: none;
+  margin-bottom: 9px;
+  margin-right:0;
+}
+
 .card-num label {
 	display: block;
 }
 
 .face-card input {
-	width: 51px;
+	width: 65px;
 	display: block;
 	margin-right:10px;
 	float:left;
 	*zoom: 1;
 }
 .face-card input.last{
-	float:left;
 	margin-right:0;
 }
+
 .payment-details label {
 	font-size: 14px;
 }
@@ -1561,17 +1556,18 @@ input[type="radio"]:checked+label::before {
 	vertical-align: middle;
 }
 .card-valid input {
-	width:76px;
+	width:90px;
 }
 .card-holder input {
-	width: 276px;
+	width: 290px;
 	margin:0;
 }
 
 .back-card .card-cvv {
-	margin-left: 217px;
+	margin-left: 210px;
 }
 .back-card .card-cvv label,.back-card .card-cvv input{
+	display:block;
 	float:right;
 }
 
@@ -1589,17 +1585,17 @@ input[type="radio"]:checked+label::before {
 	*margin-left: .3em;
 }
 
-.back-card .card-value select,.back-card .card-value a.selectBox {
+.back-card .card-value .selectBox {
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
-	width: 52px;
+	width: 66px;
 	vertical-align: middle;
 	*margin-left: .3em;
 	text-align: left;
 }
 
-#card-cvv {
+.card-cvv input{
 	width: 52px;
 }
 
@@ -1618,12 +1614,12 @@ input[type="radio"]:checked+label::before {
 	float:left;
 }
 .pdetails-office .selectBox{
-	width:174px;
+	width:188px;
 }
 .pdetails-office .controls{
 	margin-bottom:10px;
 }
-.pdetails-office .controls label,.pdetails .controls .selectBox{
+.pdetails-office label,.pdetails .selectBox{
 	display:block;
 	float:none;
 }
@@ -1643,26 +1639,22 @@ input[type="radio"]:checked+label::before {
 }
 
 .pdetails-hand .controls{
-	padding:0;
-}
-.pdetails-hand .controls.last{
-	float:left;
 }
 
-.control-group.addr .controls input{
-	width: 176px;
+.control-group.addr .controls{
+	width: 191px;
 }
 
-.control-group .build input{
-	width: 56px;
+.control-group .controls.build{
+	width: 70px;
 }
 
-.control-group .office input{
-	width: 96px;
+.control-group .controls.office{
+	width: 110px;
 }
 
-.control-group .ph-num input{
-	width: 216px;
+.control-group .controls.ph-num{
+	width: 230px;
 }
 
 .pay-confirm {

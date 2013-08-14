@@ -125,9 +125,8 @@ header {
 	cursor: pointer;
 	vertical-align: middle;
 	behavior: url(PIE.htc);
-	*display: inline;
-	*zoom: 1;
-	*margin-left: .3em;
+  overflow:hidden;
+  *zoom:1;
 	
 }
 

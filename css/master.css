@@ -641,6 +641,7 @@ header .phone i {
 	behavior: url(PIE.htc);
 	margin-top: 0px;
 	margin-bottom: 2px;
+	letter-spacing:-0.07em;
 }
 
 .type1:hover,.type1:focus {
@@ -695,7 +696,7 @@ header .phone i {
 	-webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, .12);
 	-moz-box-shadow: 0 8px 8px rgba(0, 0, 0, .12);
 	box-shadow: 0 8px 8px rgba(0, 0, 0, .12);
-	bottom: -10px;
+	bottom: 0;
 	behavior: url(PIE.htc);
 }
 
@@ -1060,7 +1061,7 @@ li.pass-alert:after {
 }
 
 .book-tickets .control-group {
-	margin-left: 17px;
+	margin-left: 19px;
 }
 
 .book-passengers h3,.payment-details h3 {
@@ -1070,6 +1071,9 @@ li.pass-alert:after {
 	margin: 0 17px;
 }
 
+#receive-receipt+label{
+	font-size:14px;
+}
 .payment-details h3 {
 	margin: 0 22px 10px 21px;
 }
@@ -1313,7 +1317,7 @@ input[type="radio"]:checked+label::before {
 }
 
 .book-tickets p {
-	margin: 0 17px;
+	margin: 0 0 0 14px;
 	line-height: 18px;
 }
 
@@ -1331,18 +1335,26 @@ input[type="radio"]:checked+label::before {
 .insurance-price .price-value {
 	margin-bottom: 20px;
 }
-
+.receipt{
+	padding-bottom:9px;
+}
+.receipt .rec-type{
+	margin-bottom:14px;
+}
 .receipt .rec-type label {
-	padding-right: 60px;
+	padding-right: 80px;
 }
 
 .rec-contacts .controls {
 	width: 191px;
 }
+.rec-contacts .controls.wide{
+	width:200px;
+}
 
 .payment {
 	background: #fae7d4;
-	padding-bottom: 15px;
+	padding-bottom: 4px;
 	-webkit-border-radius: 0 0 20px 20px;
 	border-radius: 0 0 20px 20px;
 	overflow: hidden;
@@ -1351,7 +1363,7 @@ input[type="radio"]:checked+label::before {
 }
 
 .payment-type {
-	margin-top: 5px;
+	margin-top: 3px;
 }
 
 .payment-details {
@@ -1376,7 +1388,7 @@ input[type="radio"]:checked+label::before {
 	width: 110px;
 	height: 18px;
 	padding: 10px 0 10px 48px;
-	margin-right: 6px;
+	margin-right: 10px;
 	background-color: #fff;
 	background-image:
 		url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxsaW5lYXJHcmFkaWVudCBpZD0iZzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwLjExIiBzdG9wLWNvbG9yPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMikiLz48c3RvcCBvZmZzZXQ9IjAuODkiIHN0b3AtY29sb3I9InJnYmEoMCwgMCwgMCwgMC4yKSIvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNnMSkiIC8+PC9zdmc+);
@@ -1480,7 +1492,7 @@ input[type="radio"]:checked+label::before {
 }
 
 .payment-internet,.payment-cash {
-	padding: 10px 0 14px 0;
+	padding: 15px 0 14px 0;
 	margin: 0 22px 0 21px;
 	line-height: 40px;
 }
@@ -1501,7 +1513,7 @@ input[type="radio"]:checked+label::before {
 .payment-type b:before {
 	display: inline-block;
 	height: 15px;
-	width: 17px;
+	width: 19px;
 	content: "";
 	vertical-align: middle;
 	background: url(i/sprite.png) -87px 1em no-repeat;
@@ -1529,8 +1541,8 @@ input[type="radio"]:checked+label::before {
 
 .back-card,.face-card {
 	width: 303px;
-	height: 137px;
-	padding: 55px 0 0 9px;
+	height: 134px;
+	padding: 58px 0 0 9px;
 	background: url(i/card_bg.png) 0 0 no-repeat;
 	display: inline-block;
 	*display: inline;
@@ -1545,17 +1557,16 @@ input[type="radio"]:checked+label::before {
 	padding-left: 0;
 }
 
-.face-card {
-	
+.face-card label{
+	letter-spacing: 1px;	
 }
 
 .face-card .controls,.back-card .controls {
 	margin-bottom: 9px;
 	margin-right: 0;
 }
-
-.card-num label {
-	display: block;
+.face-card .controls.card-valid{
+	margin-bottom:7px;
 }
 
 .face-card input {
@@ -1569,13 +1580,21 @@ input[type="radio"]:checked+label::before {
 .face-card input.last {
 	margin-right: 0;
 }
+.payment-details .btn{
+	margin-top:7px;
+}
 
+.payment-details .btn:active{
+  margin-top:9px;
+}
+	
 .payment-details label {
 	font-size: 14px;
 }
 
-.payment-details .card-num label {
-	display: block;
+.card-num label {
+  display: block;
+  margin-bottom:5px;
 }
 
 .payment-details .info {
@@ -1599,38 +1618,35 @@ input[type="radio"]:checked+label::before {
 }
 
 .back-card .card-cvv {
-	margin-left:234px;
+	margin-left:237px;
 }
 
-.back-card .card-cvv label,.back-card .card-cvv input {
+.back-card label,.back-card input,.back-card a,.back-card select {
+	float:left;
 	display: block;
+}
+
+.back-card label{
+  letter-spacing: 0.08em;
 }
 .back-card .card-cvv label{
 	text-align: center;
-	letter-spacing: 0.08em;
+	margin-bottom:5px;
 }
 
 .back-card .card-value {
-	margin-left:130px;
+	margin-left:126px;
 }
 
 .back-card .card-value label {
-	width: 68px;
-	display: inline-block;
+	width: 83px;
 	margin-bottom:0;
-	*display: inline;
-	*zoom: 1;
 	vertical-align: middle;
-	*margin-left: .3em;
 }
 
 .back-card .card-value .selectBox {
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
 	width: 65px;
 	vertical-align: middle;
-	*margin-left: .3em;
 	text-align: left;
 }
 
@@ -1639,7 +1655,7 @@ input[type="radio"]:checked+label::before {
 }
 
 [class^="pdetails-"] {
-	padding: 7px 0;
+	padding: 4px 0 0 0;
 }
 
 .pdetails-office p {
@@ -1663,6 +1679,10 @@ input[type="radio"]:checked+label::before {
 	margin-bottom: 10px;
 }
 
+.pdetails-office label{
+	font-size:12px;
+}
+
 .pdetails-office label,.pdetails .selectBox {
 	display: block;
 	float: none;
@@ -1670,12 +1690,22 @@ input[type="radio"]:checked+label::before {
 
 #maps {
 	float: right;
-	padding: 0 17px 15px 0px;
+	margin: 0 24px 15px 0px;
+	height:188px;
+	border:1px solid;
+	
 }
-
+.pdetails-hand .control-group{
+	margin-left:23px;
+	margin-bottom:7px;
+}
+.pdetails-hand h3 {
+  margin-bottom:1px;
+  margin-left:23px;
+}
 .pdetails-hand h4 {
 	font-size: 15px;
-	margin: 0 39px 10px 22px;
+	margin: 0 39px 10px 23px;
 }
 
 .pdetails-hand label {
